@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/CIS263.dir/main.cpp.o CMakeFiles/CIS263.dir/parr.cpp.o  -o CIS263 

@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Jarred/Desktop/Programming/CIS263/house.h
+string
+-
+
+/Users/Jarred/Desktop/Programming/CIS263/main.cpp
+iostream
+-
+house.h
+/Users/Jarred/Desktop/Programming/CIS263/house.h
+
+/Users/Jarred/Desktop/Programming/CIS263/parr.cpp
+iostream
+-
+string
+-
+house.h
+/Users/Jarred/Desktop/Programming/CIS263/house.h
+
