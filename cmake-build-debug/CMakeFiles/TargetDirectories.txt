@@ -1,3 +1,0 @@
-/Users/Jarred/Desktop/Programming/CIS263/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/Jarred/Desktop/Programming/CIS263/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/Jarred/Desktop/Programming/CIS263/cmake-build-debug/CMakeFiles/CIS263.dir
