@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/Jarred/Desktop/Programming/CIS263/DataStructures/Assignment2/MyStack.h
+vector
+-
+iostream
+-
+
+/Users/Jarred/Desktop/Programming/CIS263/DataStructures/Assignment2/main.cpp
+iostream
+-
+parr.cpp
+/Users/Jarred/Desktop/Programming/CIS263/DataStructures/Assignment2/parr.cpp
+
+/Users/Jarred/Desktop/Programming/CIS263/DataStructures/Assignment2/parr.cpp
+iostream
+-
+MyStack.h
+/Users/Jarred/Desktop/Programming/CIS263/DataStructures/Assignment2/MyStack.h
+
