@@ -1,26 +1,34 @@
 #include<iostream>
 #include<vector>
 #include"MyStack.h"
+using namespace std;
 
 template <typename Object>
-void MyStack::push(const Object & obj) {
-    MyStack::elements.push_back(obj);
-}
-
-void MyStack::pop() {
-    MyStack::elements.pop_back();
+void MyStack<Object>::push(const Object & obj) {
+    elements.push_back(obj);
 }
 
 template <typename Object>
-Object MyStack::top() const {
-    MyStack::elements.front();
+void MyStack<Object>::pop() {
+    if (!elements.size() == 0)
+        elements.pop_back();
+    else
+        cout << "Empty" << endl;
+
 }
 
-bool MyStack::empty() const {
-    return MyStack::elements.size() >= 1;
+template <typename Object>
+Object MyStack<Object>::top() const {
+   return elements.back();
 }
 
-int MyStack::GetSize() const {
-    return MyStack::elements.size();
+template <typename Object>
+bool MyStack<Object>::empty() const {
+    return elements.size() >= 1;
+}
+
+template <typename Object>
+int MyStack<Object>::GetSize() const {
+    return elements.size();
 }
 
