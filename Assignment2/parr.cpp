@@ -13,7 +13,7 @@ void MyStack<Object>::pop() {
     if (!elements.size() == 0)
         elements.pop_back();
     else
-        cout << "Empty" << endl;
+        cout << "The Stack is now empty! No item is popped!" << endl;
 
 }
 
@@ -24,7 +24,7 @@ Object MyStack<Object>::top() const {
 
 template <typename Object>
 bool MyStack<Object>::empty() const {
-    return elements.size() >= 1;
+    return elements.size() == 0;
 }
 
 template <typename Object>
