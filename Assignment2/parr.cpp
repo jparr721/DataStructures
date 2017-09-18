@@ -1,8 +1,9 @@
-#include <iostream>
-#include "MyStack.h"
+#include<iostream>
+#include<vector>
+#include"MyStack.h"
 
 template <typename Object>
-void MyStack::push(const Object& obj) {
+void MyStack::push(const Object & obj) {
     MyStack::elements.push_back(obj);
 }
 
