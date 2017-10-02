@@ -1,5 +1,5 @@
 all: functions.h functions.c p1.c
-	gcc -o functions.c p1.c
+	gcc -o functions.o p1.o
 
 p1.o: functions.h p1.c
 	gcc -c p1.c
