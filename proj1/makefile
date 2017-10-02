@@ -8,7 +8,7 @@ functions.o: functions.h functions.c
 	gcc -c functions.c
 
 enc:
-	./p1 e FEATHER infile.txt outfile.txt
+	./p e FEATHER infile outfile
 
 dec:
-	./p1 FEATHER outfile infile
+	./p d  FEATHER outfile infile

@@ -28,7 +28,6 @@ char* generateCipher() {
     char* temp = malloc(strlen(key) + strlen(cipher));
     strcpy(temp, key);
     strcat(temp, cipher);
-    printf("%s", removeDuplicates(temp));
     return removeDuplicates(temp);
 }
 
@@ -48,6 +47,7 @@ char* encrypt(char text[]) {
     }
     int difference = strlen(out) - strlen(text);
     out[strlen(out) - difference] = '\0';
+		printf("%s", text);
     strcpy(text, out);
     return text;
 }
@@ -97,6 +97,7 @@ void processOutput(char file[], char text[]){
         printf("Error, could not open file");
         exit(1);
     }
+		printf("%s", text);
     fprintf(outFile, text);
     fclose(outFile);
 }
