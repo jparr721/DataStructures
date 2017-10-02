@@ -11,14 +11,14 @@ int main(int argc, char* argv[]) {
 	key = argv[2];
 	switch(cmd) {
 		case 'e':
-			cmd = processInput(argv[3]);
-			in = encrypt(cmd);
+			cmd = *processInput(argv[3]);
+			in = encrypt(&cmd);
 			printf("After encryption, the output is: %s\n", in);
 			processOutput(argv[4], in);
 			break;
 		case 'd':
-			cmd = processInput(argv[3]);
-			out = decrypt(cmd);
+			cmd = *processInput(argv[3]);
+			out = decrypt(&cmd);
 			printf("After decryption, the output is: %s\n", out);
 			processOutput(argv[4], out);
 			break;

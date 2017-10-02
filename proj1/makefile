@@ -1,5 +1,5 @@
-all: functions.h functions.o p1.o
-	gcc -o functions.o p1.o
+all: functions.h functions.c p1.c
+	gcc -o functions.c p1.c
 
 p1.o: functions.h p1.c
 	gcc -c p1.c
@@ -8,7 +8,7 @@ functions.o: functions.h functions.c
 	gcc -c functions.c
 
 enc:
-	./p e FEATHER infile outfile
+	./p e FEATHER infile.txt outfile.txt
 
-dex:
+dec:
 	./p FEATHER outfile infile
