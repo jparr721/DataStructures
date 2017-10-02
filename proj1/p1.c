@@ -1,4 +1,4 @@
-#include <stdio.h>
+//#include <stdio.h>
 #include "functions.h"
 
 
@@ -26,9 +26,9 @@ int main(int argc, char* argv[]) {
 			printf("Instructions \n\n");
             printf("You're probably here because you made a mistake \n\n");
 			printf("Invocation format: \n");
-			printf("./p1 -e/-d key inFile outFile\n");
+			printf("./p1 e/d key inFile outFile\n");
 	}
-	return 0;
+return 0;
 }
 
 

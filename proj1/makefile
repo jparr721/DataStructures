@@ -1,4 +1,6 @@
-all: functions.h functions.c p1.c
+all: functions
+
+functions: functions.h functions.o p1.o
 	gcc -o functions.o p1.o
 
 p1.o: functions.h p1.c

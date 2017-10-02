@@ -17,7 +17,7 @@ char* processInput(char file[]);
 
 char* generateCipher();
 
-char* generateSet(char*);
+char* removeDuplicates(char*);
 
 void processOutput(char file[], char text[]);
 
