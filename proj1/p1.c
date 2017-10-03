@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
 			printf("Instructions \n\n");
             printf("You're probably here because you made a mistake \n\n");
 			printf("Invocation format: \n");
-			printf("./p e/d key inFile outFile\n");
+			printf("./p e/d key infile outfile\n\n");
 	}
 return 0;
 }
