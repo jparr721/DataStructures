@@ -27,6 +27,7 @@ int main(int argc, char* argv[]) {
             printf("You're probably here because you made a mistake \n\n");
 			printf("Invocation format: \n");
 			printf("./p e/d key infile outfile\n\n");
+			printf("You can also use \"make enc\" to encrypt, and \"make dec\" to decrypt\n\n");
 	}
 return 0;
 }
