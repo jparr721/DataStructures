@@ -11,4 +11,12 @@ enc:
 	./p e FEATHER infile outfile
 
 dec:
-	./p d  FEATHER outfile infile
+	./p d FEATHER outfile infile
+
+test:
+	./p e FEATHER infile outfile
+	./p d FEATHER outfile newfile
+	diff -s infile newfile
+
+clean:
+	rm -f *.o p1.o infile outfile
