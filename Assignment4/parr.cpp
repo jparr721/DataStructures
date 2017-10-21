@@ -7,7 +7,7 @@
 
 template <class KTy, class Ty>
 void PrintMap(std::map<KTy, Ty> map) {
-    // typedef std::map<KTy, Ty>::iterator it;
+
     for (auto it = map.cbegin(); it != map.cend(); ++it)
         std::cout << it->first << ": " << it->second << std::endl;
 }
@@ -19,10 +19,15 @@ int main(void) {
         std::ifstream inFile;
         inFile.open(fileName);
 
+        // Should be open, but ya know...
         if (inFile.is_open()) {
             while (inFile.good()) {
                 std::string word;
                 inFile >> word;
+
+                // Exclude some words
+                if (ispunct(wordCount.find(word)))
+                    wordCount.erase(word);
 
                 // check if word is already there
                 if (wordCount.find(word) == wordCount.end()) {
