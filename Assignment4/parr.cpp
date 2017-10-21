@@ -2,27 +2,39 @@
 #include <fstream>
 #include <string>
 #include <sstream>
+#include <vector>
+#include <map>
 
-int main() {
-    std::ifstream inFile;
-    std::ofstream outFile;
-    std::string word;
-    inFile.open("input.txt");
-    outFile.open("output.txt");
-    std::string s[word.length()];
-    int counter = 0;
-    while (inFile >> word) {
-        outFile << word << " ";
-        std::cout << word << std::endl;
-        for (int i = 0; i < 23; ++i) {
-            s[i] = word;
-        }
-    }
-    for (int i = 0; i < 23; ++i) {
-        std::cout << s[i] << " " << std::flush;
-    }
-    inFile.close();
-    outFile.close();
-    return 0;
+template <class KTy, class Ty>
+void PrintMap(std::map<KTy, Ty> map) {
+    // typedef std::map<KTy, Ty>::iterator it;
+    for (auto it = map.cbegin(); it != map.cend(); ++it)
+        std::cout << it->first << ": " << it->second << std::endl;
 }
 
+int main(void) {
+    static const char* fileName= "input.txt";
+
+    std::map<std::string, unsigned int> wordCount; {
+        std::ifstream inFile;
+        inFile.open(fileName);
+
+        if (inFile.is_open()) {
+            while (inFile.good()) {
+                std::string word;
+                inFile >> word;
+
+                // check if word is already there
+                if (wordCount.find(word) == wordCount.end()) {
+                    wordCount[word] = 1;
+                } else {
+                    wordCount[word]++;
+                }
+            }
+        }
+        else {
+            std::cerr << "Couldn't open file" << std::endl;
+        }
+        PrintMap(wordCount);
+    }
+}
