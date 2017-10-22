@@ -26,7 +26,10 @@ int main(void) {
                 inFile >> word;
 
                 // Exclude some words
-                if (ispunct(wordCount.find(word)))
+//                if (ispunct(wordCount[word]))
+//                    wordCount.erase(word);
+
+                if (strcmp(wordCount[word], "@"))
                     wordCount.erase(word);
 
                 // check if word is already there
