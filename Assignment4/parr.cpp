@@ -8,9 +8,10 @@
 
 template <class KTy, class Ty>
 void PrintMap(std::map<KTy, Ty> map) {
-
+    std::ofstream outFile;
+    outFile.open("output.txt");
     for (auto it = map.cbegin(); it != map.cend(); ++it)
-	std::cout << it->first << ": " << it->second << std::endl;
+	outFile << it->first << ": " << it->second << "\n";
 }
 
 int main(void) {
