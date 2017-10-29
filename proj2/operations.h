@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #define N 20
 
-typedef struct product {
+struct product {
 	char pName[N];
 	float quantity;
 	char qUnit[N];
@@ -37,5 +37,7 @@ void showInv(product*);
 void done();
 
 void load(char inf[]);
+
+int startStore(char[]);
 
 void save(char outf[]);
