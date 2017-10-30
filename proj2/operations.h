@@ -22,9 +22,9 @@ extern int profit;
 
 void addProduct(product**, product);
 
-float purchase(product*, char[], float);
+void purchase(product*, char[], float);
 
-float checkPrice(product*, char[]);
+void checkPrice(product*, char[]);
 
 void showProducts(product*);
 
@@ -38,6 +38,8 @@ void done();
 
 void load(char inf[]);
 
-int startStore(char[]);
+void startStore(char[]);
 
 void save(char outf[]);
+
+void displayMenu();
