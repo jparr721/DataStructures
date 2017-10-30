@@ -7,7 +7,7 @@ void addProduct(product ** l, product node) {
 	newProduct = &node;
 	newProduct->next = *l;
 	*l = newProduct;
-	
+
 	puts("New Item added \n");
 	printf("Name: %s\n", newProduct->pName);
 	printf("Quantity: %f%s\n", newProduct->quantity, newProduct->qUnit);
@@ -23,7 +23,7 @@ void purchase(product* l, char name[], float quantity) {
 			printf("Purchased %f %s of %s\n", l->quantity, l->qUnit, l->pName);
 		} else {
 			puts("We do not have enough in stock, sorry :(");
-		}	
+		}
 	} else {
 		puts("Could not find that product, please check our stock!");
 	}
@@ -45,18 +45,17 @@ void showProducts(product* l) {
 	product* current = l;
 
 	puts("Items currently in store:\n");
-	// while(current != NULL) {
-		printf("%s\n", current->pName);
+	 while(current != NULL) {
+		printf("%s\n\n", current->pName);
 		current = current->next;
-	// }
+	}
 	displayMenu();
 }
 
-void cleanUpProduct(product* l, char name[]) {
-	product* current = l;
-	product* p = get(name);
-	while(current != NULL) {
-		current = current->next;
-	}
-}
-
+// void cleanUpProduct(product* l, char name[]) {
+// 	product* current = l;
+// 	product* p = get(name);
+// 	while(current != NULL) {
+// 		current = current->next;
+// 	}
+// }

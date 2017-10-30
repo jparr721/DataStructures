@@ -19,6 +19,7 @@ typedef struct product product;
 
 extern int choice;
 extern int profit;
+product* list;
 
 void addProduct(product**, product);
 
