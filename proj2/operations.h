@@ -39,8 +39,6 @@ void done();
 
 void load(char inf[]);
 
-void startStore(char[]);
-
 void save(char outf[]);
 
 void displayMenu();

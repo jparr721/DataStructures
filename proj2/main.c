@@ -4,7 +4,8 @@
 int choice = 0;
 
 void displayMenu() {
-	puts("Sah dude, welcome to my store");
+	puts("\n\n");
+	puts("Welcome to the grocery store made my Jarred Parr (daddy)");
 	puts("Select an option bromigo");
 	puts("===============================================================================================");
 	puts("1: Add a product to store 			2: Purchase a product from store");
@@ -16,10 +17,6 @@ void displayMenu() {
 	printf("%d selected\n\n", choice);
 }
 
-void startStore(char data[]) {
-	// displayMenu();
-}
-
 int main() {
 	displayMenu();
 	while(choice != 8) {
@@ -29,9 +26,9 @@ int main() {
 			case 1:
 				puts("===========================  Add Item  ===================================");
 				struct product p;
-				char* name = (char*)malloc(20*sizeof(char*));
-				char* quantUnit = (char*)malloc(20*sizeof(char*));
-				char* priceUnit = (char*)malloc(20*sizeof(char*));
+				char name[20];// = (char*)malloc(20*sizeof(char*));
+				char quantUnit[20]; 
+				char priceUnit[20]; 
 				float quan, pPrice;
 				printf("Enter the name of the new product: ");
 				scanf("%s", name);
@@ -67,14 +64,26 @@ int main() {
 				checkPrice(list, productName);
 				break;
 			case 4:
-				puts("========================== Store Inventory===================================");
+				puts("========================== Items For Sale  ===================================");
 				showProducts(list);
 				break;
 			case 5:
 				puts("========================= Clean Up Product =================================");
 				puts("Enter the name of the product you'd like to remove: ");
 				scanf("%s", productName);
-				// cleanUpProduct(list, productName);
+				cleanUpProduct(list, productName);
+				break;
+			case 6:
+				puts("======================== Find Product =====================================");
+				puts("Which product would you like to find?: ");
+				scanf("%s", productName);
+				findProduct(list, productName);
+				break;
+			case 7:
+				puts("======================= Inventory ========================================");
+				showInv(list);
+				break;
+
 			case 9:
 			case 0:
 				puts("Invalid command! Please run again\n\n");

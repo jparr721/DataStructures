@@ -4,7 +4,11 @@ void addProduct(product ** l, product node) {
 	product * newProduct;
 	newProduct = malloc(sizeof(product));
 
-	newProduct = &node;
+	strncpy(newProduct->pName, node.pName, 20);
+	strncpy(newProduct->qUnit, node.qUnit, 20);
+	strncpy(newProduct->pUnit, node.pUnit, 20);
+	newProduct->quantity = node.quantity;
+	newProduct->price = node.price;
 	newProduct->next = *l;
 	*l = newProduct;
 
@@ -33,8 +37,8 @@ void purchase(product* l, char name[], float quantity) {
 void checkPrice(product* l, char name[]) {
 	product* current = l;
 	while(current != NULL) {
-		if (current->pName == name) {
-			printf("The price of %s is: %f\n\n", current->pName, current->price);
+		if (strcmp(current->pName, name) == 0) {
+			printf("The price of %s is: %s%f\n\n", current->pUnit, current->pName, current->price);
 		}
 		current = current->next;
 	}
@@ -46,16 +50,64 @@ void showProducts(product* l) {
 
 	puts("Items currently in store:\n");
 	 while(current != NULL) {
-		printf("%s\n\n", current->pName);
+		printf("--%s\n\n", current->pName);
 		current = current->next;
 	}
 	displayMenu();
 }
 
-// void cleanUpProduct(product* l, char name[]) {
-// 	product* current = l;
-// 	product* p = get(name);
-// 	while(current != NULL) {
-// 		current = current->next;
-// 	}
-// }
+void cleanUpProduct(product* l, char name[]) {
+	product* current = l;
+
+	if(strcmp(current->pName, l->pName) == 0) {
+		list = current->next;	
+	} else {
+		while(current->next != NULL) {
+			if(strcmp(current->next->pName, l->pName) == 0) {
+				product* removed = current->next;
+				if(removed->next != NULL) {
+					current->next = removed->next;
+					puts("Item removed successfully!");
+				} else {
+					current->next = NULL;
+				}
+				break;
+			}
+			current = current->next;
+		}
+	}
+	displayMenu();
+}
+
+void findProduct(product* l, char name[]) {
+	product* current = l;
+
+	while(current != NULL) {
+		if(strcmp(current->pName, name) == 0) {
+			printf("Product: %s\n\nQuantity: %f%s\n\nPrice: %f%s\n", current->pName, current->quantity, current->qUnit, current->price, current->pUnit);
+		} else {
+			puts("Error, could not find product with that name");
+		}
+		current = current->next;
+	}
+	displayMenu();
+}
+
+void showInv(product* l) {
+	product* current = l;
+	puts("Full item inventory: \n");
+	
+	while(current != NULL) {
+		printf("------------%s-------------\n", current->pName);
+		printf("Quantity: %f%s\nPrice: %f%s\n", current->quantity, current->qUnit, current->price, current->pUnit);
+		current = current->next;
+	}
+	displayMenu();
+}
+
+
+
+
+
+
+
