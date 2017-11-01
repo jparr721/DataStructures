@@ -85,6 +85,7 @@ void findProduct(product* l, char name[]) {
 	while(current != NULL) {
 		if(strcmp(current->pName, name) == 0) {
 			printf("Product: %s\n\nQuantity: %f%s\n\nPrice: %f%s\n", current->pName, current->quantity, current->qUnit, current->price, current->pUnit);
+			break;
 		} else {
 			puts("Error, could not find product with that name");
 		}
