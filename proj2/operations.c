@@ -105,6 +105,59 @@ void showInv(product* l) {
 	displayMenu();
 }
 
+void save(char outf[]) {
+	puts("Now saving...");
+	FILE *f = fopen(outf, "w");
+	if (f == NULL) {
+		printf("Error saving file!\n");
+		exit(1);
+	}
+
+	product* current = list;
+
+	while(current != NULL) {
+		fprintf(f, "%s\n", current->pName);
+		fprintf(f, "%f\n", current->quantity);
+		fprintf(f, "%s\n", current->qUnit);
+		fprintf(f, "%f\n", current->price);
+		fprintf(f, "%s\n", current->pUnit);
+		current = current->next;
+	}
+	fclose(f);
+}
+
+void load(char inf[]) {
+	FILE *f = fopen(inf, "r");
+	if (f == NULL) {
+		printf("Error loading file!\n");
+		exit(1);
+	}
+
+	char line[20];
+
+	product p;
+	
+	int i = 0;
+
+	while(fgets(line, sizeof(line), f)) {
+		line[strlen(line) -1] = '\0';
+		if (i == 0)
+			strcpy(p.pName, line);
+		else if (i == 1)
+			p.quantity = strtof(line, NULL);
+		else if (i == 2)
+			strcpy(p.qUnit, line);
+		else if (i == 3)
+			p.price = strtof(line, NULL);
+		else if (i == 4) {
+			strcpy(p.pUnit, line);
+			i = -1;
+			addProduct(&list, p);
+		}
+		i++;
+	}
+	fclose(f);
+}
 
 
 

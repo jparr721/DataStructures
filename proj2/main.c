@@ -18,6 +18,7 @@ void displayMenu() {
 }
 
 int main() {
+	load("storelog.txt");
 	displayMenu();
 	while(choice != 8) {
 		char productName[20];
@@ -26,7 +27,7 @@ int main() {
 			case 1:
 				puts("===========================  Add Item  ===================================");
 				struct product p;
-				char name[20];// = (char*)malloc(20*sizeof(char*));
+				char name[20];
 				char quantUnit[20]; 
 				char priceUnit[20]; 
 				float quan, pPrice;
@@ -83,6 +84,11 @@ int main() {
 				puts("======================= Inventory ========================================");
 				showInv(list);
 				break;
+			case 8:
+				puts("====================== Done =============================================");
+				save("storelog.txt");
+				puts("Thanks for using the store!");
+				break;
 
 			case 9:
 			case 0:
@@ -92,6 +98,5 @@ int main() {
 		}
 	}
 	system("clear");
-	puts("Thanks for visiting the totally dank grocery store");
 	return 0;
 }
