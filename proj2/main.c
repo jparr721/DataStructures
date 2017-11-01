@@ -20,7 +20,7 @@ void displayMenu() {
 int main() {
 	load("storelog.txt");
 	displayMenu();
-	while(choice != 8) {
+	while(choice != 9) {
 		char productName[20];
 
 		switch(choice) {
@@ -86,7 +86,7 @@ int main() {
 				break;
 			case 8:
 				puts("====================== Done =============================================");
-				save("storelog.txt");
+				done();
 				puts("Thanks for using the store!");
 				break;
 

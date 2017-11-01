@@ -24,7 +24,7 @@ void purchase(product* l, char name[], float quantity) {
 		if (quantity <= l->quantity) {
 			float newQuantity = l->quantity - quantity;
 			l->quantity = newQuantity;
-			printf("Purchased %f %s of %s\n", l->quantity, l->qUnit, l->pName);
+			printf("Purchased %f %s of %s\n", newQuantity, l->qUnit, l->pName);
 		} else {
 			puts("We do not have enough in stock, sorry :(");
 		}
@@ -107,7 +107,7 @@ void showInv(product* l) {
 
 void save(char outf[]) {
 	puts("Now saving...");
-	FILE *f = fopen(outf, "w");
+	FILE *f = fopen("storelog.txt", "w");
 	if (f == NULL) {
 		printf("Error saving file!\n");
 		exit(1);
@@ -127,7 +127,8 @@ void save(char outf[]) {
 }
 
 void load(char inf[]) {
-	FILE *f = fopen(inf, "r");
+	puts("Now loading...");
+	FILE *f = fopen("storelog.txt", "r");
 	if (f == NULL) {
 		printf("Error loading file!\n");
 		exit(1);
@@ -159,8 +160,9 @@ void load(char inf[]) {
 	fclose(f);
 }
 
-
-
-
-
+void done() {
+	save("storelog.txt");
+	puts("Thanks for stopping by!");
+	exit(0);
+}
 
