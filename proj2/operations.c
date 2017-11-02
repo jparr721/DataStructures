@@ -24,7 +24,9 @@ void purchase(product* l, char name[], float quantity) {
 		if (quantity <= l->quantity) {
 			float newQuantity = l->quantity - quantity;
 			l->quantity = newQuantity;
-			printf("Purchased %f %s of %s\n", newQuantity, l->qUnit, l->pName);
+			l->profit += quantity * l->price;
+			printf("Purchased %f %s of %s\n", quantity, l->qUnit, l->pName);
+			printf("Profits: %f", l->profit);
 		} else {
 			puts("We do not have enough in stock, sorry :(");
 		}
@@ -38,7 +40,9 @@ void checkPrice(product* l, char name[]) {
 	product* current = l;
 	while(current != NULL) {
 		if (strcmp(current->pName, name) == 0) {
-			printf("The price of %s is: %s%f\n\n", current->pUnit, current->pName, current->price);
+			printf("The price of %s is: %f%s\n\n", current->pName, current->price, current->pUnit);
+		} else {
+			puts("Sorry, that product doesn't exist in the store");
 		}
 		current = current->next;
 	}
@@ -163,6 +167,7 @@ void load(char inf[]) {
 
 void done() {
 	save("storelog.txt");
+	printf("Profits: %f\n", list->profit);
 	puts("Thanks for stopping by!");
 	exit(0);
 }

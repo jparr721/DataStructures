@@ -12,13 +12,13 @@ struct product {
 	char qUnit[N];
 	float price;
 	char pUnit[N]; // because it sounds like G UNIT BOIIII
+	float profit;
 	struct product* next;
 };
 
 typedef struct product product;
 
 extern int choice;
-extern int profit;
 product* list;
 
 void addProduct(product**, product);
