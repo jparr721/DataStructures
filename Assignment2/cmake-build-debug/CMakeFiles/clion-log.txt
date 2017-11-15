@@ -1,18 +1,11 @@
 /Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/Jarred/Desktop/Programming/CIS263/DataStructures/Assignment2
--- The C compiler identification is AppleClang 8.1.0.8020042
--- The CXX compiler identification is AppleClang 8.1.0.8020042
--- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
--- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
--- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/Jarred/Desktop/Programming/CIS263/DataStructures/Assignment2/cmake-build-debug
+CMake Error at /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake:137 (message):
+  Could NOT find CURL (missing: CURL_INCLUDE_DIR)
+Call Stack (most recent call first):
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/FindPackageHandleStandardArgs.cmake:377 (_FPHSA_FAILURE_MESSAGE)
+  /Applications/CLion.app/Contents/bin/cmake/share/cmake-3.8/Modules/FindCURL.cmake:48 (FIND_PACKAGE_HANDLE_STANDARD_ARGS)
+  CMakeLists.txt:8 (find_package)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/Jarred/Desktop/Programming/CIS263/DataStructures/Assignment2/cmake-build-debug/CMakeFiles/CMakeOutput.log".

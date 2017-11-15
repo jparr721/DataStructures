@@ -7,6 +7,7 @@
 
 #include<vector>
 #include<iostream>
+#include<curl/curl.h>
 using namespace std;
 
 template <typename Object>

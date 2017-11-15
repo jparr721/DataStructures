@@ -1,33 +1,37 @@
 #!/bin/bash
-#Ask for admin password
-sudo -v
 
 if [ -z "$1" ]
 then
 	echo "The usage of this program is: backup [options] targetFileList"
 	exit 1
 fi
-
-if [[ $1 != *'-'* ]]; then
-	file1=$1
-	file2=$2
-	file3=$3
-else
-	file1=$2
-	file2=$3
-	file3=$4
+if [[ -d $2 || -f $2 ]]; then
+	for input in "$@"
+	do
+		if [[ -d $input || -f $input ]]; then
+			let file1 = $input
+			if [[ -n $file1 ]]; then
+				let file2 = $input
+			fi
+					if [[ -n file2 ]]; then
+						let file3 = $input
+					fi
+		elif [[ $input = *'-'* ]]; then
+			continue
+		fi
+	done
 fi
 
+function clean() {
+	echo "Cleaning old .backup files"
+	rm -rf ~/.backup
+}
+
 function backup_files() {
-	if [[ -z `ls -a | grep .backup` ]]; then
+		clean
 		echo "Making .backup..."
 		mkdir ~/.backup
 		cp -R `pwd`/{$1,$2,$3} ~/.backup
-	else
-		rm -rf ~/.backup
-		mkdir ~/.backup
-		cp -R `pwd`/{$1,$2,$3} ~/.backup
-	fi
 }
 
 backup_files $file1 $file2 $file3
@@ -36,10 +40,10 @@ while getopts ":lnh" opt; do
 	case "${opt}" in
 		l)
 			printf "Listing files in .backup:\n\n"
-			ls -al ../proj2
+			ls -al ~/.backup | awk '{print $9}'
 			;;
 		n)
-			printf "There are `ls -1 | wc -l` files that take up `du -k ~/.backup | awk '{print $1"kb"}'` of space in .backup\n\n"
+			printf "There are `ls -1 | wc -l` files that take up `du -skh ~/.backup | awk '{print $1"b"}'` of space in .backup\n\n"
 			;;
 		h)
 			printf "\n\n"
