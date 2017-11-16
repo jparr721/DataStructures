@@ -1,26 +1,8 @@
 #!/bin/bash
-
-if [ -z "$1" ]
-then
-	echo "The usage of this program is: backup [options] targetFileList"
-	exit 1
-fi
-if [[ -d $2 || -f $2 ]]; then
-	for input in "$@"
-	do
-		if [[ -d $input || -f $input ]]; then
-			let file1 = $input
-			if [[ -n $file1 ]]; then
-				let file2 = $input
-			fi
-					if [[ -n file2 ]]; then
-						let file3 = $input
-					fi
-		elif [[ $input = *'-'* ]]; then
-			continue
-		fi
-	done
-fi
+regex="^-."
+args=""
+ARGUMENTS=()
+FILES=()
 
 function clean() {
 	echo "Cleaning old .backup files"
@@ -31,15 +13,32 @@ function backup_files() {
 		clean
 		echo "Making .backup..."
 		mkdir ~/.backup
-		cp -R `pwd`/{$1,$2,$3} ~/.backup
+		cp -R ${FILES[@]} ~/.backup
 }
 
-backup_files $file1 $file2 $file3
+for input in "$@"
+do
+	if [[ $input =~ $regex ]];
+	then
+		#Arguments
+		ARGUMENTS+=$input
+	else
+		#Files
+		FILES+="`pwd`/$input "
+	fi
+done
+if [[ ${#FILES[@]} -eq 0 ]]; then
+	echo "No files, bitch"
+else
+	backup_files ${FILES[@]}
+fi
+
+
 
 while getopts ":lnh" opt; do
 	case "${opt}" in
 		l)
-			printf "Listing files in .backup:\n\n"
+			printf "Listing files in .backup:\n"
 			ls -al ~/.backup | awk '{print $9}'
 			;;
 		n)
