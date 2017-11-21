@@ -10,10 +10,10 @@ function handle_flags() {
 			ls -al ~/.backup | awk '{print $9}'
 			;;
 		-n)
-			printf "There are`ls ~/.backup |wc -l` files that take up `du -c ~/.backup | tail -1 | head -c 3` Kb of space in .backup\n\n"
+			printf "There are`ls ~/.backup |wc -l` files that take up `du -ch ~/.backup | tail -1 | head -c 4` of space in .backup\n\n"
 			;;
 		-ln | -nl)
-			printf "There are`ls ~/.backup |wc -l` files that take up `du -skh ~/.backup | tail -1 | head -c 3`Kb of space in .backup\n\n"
+			printf "There are`ls ~/.backup |wc -l` files that take up `du -ch ~/.backup | tail -1 | head -c 4` of space in .backup\n\n"
 			ls -al ~/.backup | awk '{print $9}'
 			;;
 		--help)
@@ -26,7 +26,7 @@ function handle_flags() {
 		-ln--help | -nl--help | --help-ln | --help-nl)
 			echo Listing files in .backup: 
 			ls -al ~/.backup | awk '{print $9}'
-			printf "There are`ls ~/.backup|wc -l` files that take up `du -skh ~/.backup | tail -1 | head -c 3`Kb of space in .backup\n\n"
+			printf "There are`ls ~/.backup|wc -l` files that take up `du -ch ~/.backup | tail -1 | head -c 4` of space in .backup\n\n"
 			printf "\n\n"
 			echo "BACKUP(1)		Extended Command Manual		BACKUP(1)"
 			echo "-n	Show the number of files in .backup and how much space they take up"
@@ -43,13 +43,15 @@ function handle_flags() {
 			echo "-h	Show help page"
 			;;
 		-n--help | --help-n)
-			printf "There are`ls ~/.backup|wc -l` files that take up `du -c ~/.backup | tail -1 | head -c 3`kb of space in .backup\n\n"
+			printf "There are`ls ~/.backup|wc -l` files that take up `du -ch ~/.backup | tail -1 | head -c 4` of space in .backup\n\n"
 			printf "\n\n"
 			echo "BACKUP(1)		Extended Command Manual		BACKUP(1)"
 			echo "-n	Show the number of files in .backup and how much space they take up"
 			echo "-l	List files currently in -l"
 			echo "-h	Show help page"
 			;;
+		*)
+			echo "Invalid argument $ARGUMENTS"
 		esac
 
 }
