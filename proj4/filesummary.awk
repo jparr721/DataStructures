@@ -1,4 +1,9 @@
 #!/bin/gawk -f
-BEGIN {n = 0}
-/d/ {++n}
+BEGIN {
+print "directories  files  links  total  storage(bytes)"
+print "================================================"
+} 
+{n = 0}
+/-/ {++n}
 END {print n}
+
