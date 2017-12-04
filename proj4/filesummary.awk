@@ -3,7 +3,11 @@ BEGIN {
 print "directories  files  links  total  storage(bytes)"
 print "================================================"
 } 
-{n = 0}
-/-/ {++n}
-END {print n}
+{OFS="\t"}
+/^-[rwxts-]{9}/{++files}
+/^d[rwxts-]{9}/{++directory}
+/^l[rwxts-]{9}/{++link}
+{total = files+directory+link}
+{bytes+=$5}
+END {print directory"            "files,link"             "total"      "bytes}
 
