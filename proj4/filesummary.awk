@@ -9,5 +9,5 @@ print "================================================"
 /^l[rwxts-]{9}/{++link}
 {total = files+directory+link}
 {bytes+=$5}
-END {print directory"            "files,link"             "total"      "bytes}
+END {print directory"            "files,link"    "total"      "bytes}
 
