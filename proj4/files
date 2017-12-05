@@ -135,23 +135,23 @@ drwx------  3 blk-l0tus users 4096 Nov 26 14:37 firefox
 total 12
 drwx------ 3 blk-l0tus users 4096 Nov 26 14:37 .
 drwx------ 3 blk-l0tus users 4096 Nov 26 14:37 ..
-drwx------ 7 blk-l0tus users 4096 Dec  4 15:20 6c9qzquq.default
+drwx------ 7 blk-l0tus users 4096 Dec  4 15:51 6c9qzquq.default
 
 /home/blk-l0tus/.cache/mozilla/firefox/6c9qzquq.default:
 total 32
-drwx------ 7 blk-l0tus users 4096 Dec  4 15:20 .
+drwx------ 7 blk-l0tus users 4096 Dec  4 15:51 .
 drwx------ 3 blk-l0tus users 4096 Nov 26 14:37 ..
 drwx------ 4 blk-l0tus users 4096 Dec  3 23:36 cache2
 -rw------- 1 blk-l0tus users 2072 Dec  3 23:35 directoryLinks.json
 drwx------ 2 blk-l0tus users 4096 Nov 26 14:37 OfflineCache
-drwxr-xr-x 3 blk-l0tus users 4096 Dec  4 15:20 safebrowsing
+drwxr-xr-x 3 blk-l0tus users 4096 Dec  4 15:50 safebrowsing
 drwxr-xr-x 2 blk-l0tus users 4096 Dec  4 12:40 startupCache
 drwx------ 2 blk-l0tus users 4096 Dec  4 12:44 thumbnails
 
 /home/blk-l0tus/.cache/mozilla/firefox/6c9qzquq.default/cache2:
 total 572
 drwx------ 4 blk-l0tus users   4096 Dec  3 23:36 .
-drwx------ 7 blk-l0tus users   4096 Dec  4 15:20 ..
+drwx------ 7 blk-l0tus users   4096 Dec  4 15:51 ..
 drwx------ 2 blk-l0tus users   4096 Dec  4 15:40 doomed
 drwx------ 2 blk-l0tus users 344064 Dec  4 15:40 entries
 -rw------- 1 blk-l0tus users 224416 Dec  3 23:36 index
@@ -5346,68 +5346,68 @@ drwx------ 4 blk-l0tus users    4096 Dec  3 23:36 ..
 /home/blk-l0tus/.cache/mozilla/firefox/6c9qzquq.default/OfflineCache:
 total 264
 drwx------ 2 blk-l0tus users   4096 Nov 26 14:37 .
-drwx------ 7 blk-l0tus users   4096 Dec  4 15:20 ..
+drwx------ 7 blk-l0tus users   4096 Dec  4 15:51 ..
 -rw-r--r-- 1 blk-l0tus users 262144 Nov 26 14:37 index.sqlite
 
 /home/blk-l0tus/.cache/mozilla/firefox/6c9qzquq.default/safebrowsing:
 total 608
-drwxr-xr-x 3 blk-l0tus users   4096 Dec  4 15:20 .
-drwx------ 7 blk-l0tus users   4096 Dec  4 15:20 ..
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 allow-flashallow-digest256.pset
--rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:20 allow-flashallow-digest256.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 base-track-digest256.pset
--rw-r--r-- 1 blk-l0tus users  63628 Dec  4 15:20 base-track-digest256.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 block-flash-digest256.pset
--rw-r--r-- 1 blk-l0tus users   7648 Dec  4 15:20 block-flash-digest256.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 block-flashsubdoc-digest256.pset
--rw-r--r-- 1 blk-l0tus users  82744 Dec  4 15:20 block-flashsubdoc-digest256.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 except-flashallow-digest256.pset
--rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:20 except-flashallow-digest256.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 except-flash-digest256.pset
--rw-r--r-- 1 blk-l0tus users    268 Dec  4 15:20 except-flash-digest256.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 except-flashinfobar-digest256.pset
--rw-r--r-- 1 blk-l0tus users    556 Dec  4 15:20 except-flashinfobar-digest256.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 except-flashsubdoc-digest256.pset
--rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:20 except-flashsubdoc-digest256.sbstore
-drwxr-xr-x 2 blk-l0tus users   4096 Dec  4 15:20 google4
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 mozplugin-block-digest256.pset
--rw-r--r-- 1 blk-l0tus users   3580 Dec  4 15:20 mozplugin-block-digest256.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 mozstd-trackwhite-digest256.pset
--rw-r--r-- 1 blk-l0tus users 324988 Dec  4 15:20 mozstd-trackwhite-digest256.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 test-block-simple.pset
--rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:20 test-block-simple.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 test-harmful-simple.pset
--rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:20 test-harmful-simple.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 test-malware-simple.pset
--rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:20 test-malware-simple.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 test-phish-simple.pset
--rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:20 test-phish-simple.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 test-track-simple.pset
--rw-r--r-- 1 blk-l0tus users    272 Dec  4 15:20 test-track-simple.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 test-trackwhite-simple.pset
--rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:20 test-trackwhite-simple.sbstore
--rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:20 test-unwanted-simple.pset
--rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:20 test-unwanted-simple.sbstore
+drwxr-xr-x 3 blk-l0tus users   4096 Dec  4 15:50 .
+drwx------ 7 blk-l0tus users   4096 Dec  4 15:51 ..
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 allow-flashallow-digest256.pset
+-rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:50 allow-flashallow-digest256.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 base-track-digest256.pset
+-rw-r--r-- 1 blk-l0tus users  63628 Dec  4 15:50 base-track-digest256.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 block-flash-digest256.pset
+-rw-r--r-- 1 blk-l0tus users   7648 Dec  4 15:50 block-flash-digest256.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 block-flashsubdoc-digest256.pset
+-rw-r--r-- 1 blk-l0tus users  82744 Dec  4 15:50 block-flashsubdoc-digest256.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 except-flashallow-digest256.pset
+-rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:50 except-flashallow-digest256.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 except-flash-digest256.pset
+-rw-r--r-- 1 blk-l0tus users    268 Dec  4 15:50 except-flash-digest256.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 except-flashinfobar-digest256.pset
+-rw-r--r-- 1 blk-l0tus users    556 Dec  4 15:50 except-flashinfobar-digest256.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 except-flashsubdoc-digest256.pset
+-rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:50 except-flashsubdoc-digest256.sbstore
+drwxr-xr-x 2 blk-l0tus users   4096 Dec  4 15:50 google4
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 mozplugin-block-digest256.pset
+-rw-r--r-- 1 blk-l0tus users   3580 Dec  4 15:50 mozplugin-block-digest256.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 mozstd-trackwhite-digest256.pset
+-rw-r--r-- 1 blk-l0tus users 324988 Dec  4 15:50 mozstd-trackwhite-digest256.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 test-block-simple.pset
+-rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:50 test-block-simple.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 test-harmful-simple.pset
+-rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:50 test-harmful-simple.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 test-malware-simple.pset
+-rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:50 test-malware-simple.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 test-phish-simple.pset
+-rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:50 test-phish-simple.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 test-track-simple.pset
+-rw-r--r-- 1 blk-l0tus users    272 Dec  4 15:50 test-track-simple.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 test-trackwhite-simple.pset
+-rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:50 test-trackwhite-simple.sbstore
+-rw-r--r-- 1 blk-l0tus users     16 Dec  4 15:50 test-unwanted-simple.pset
+-rw-r--r-- 1 blk-l0tus users    232 Dec  4 15:50 test-unwanted-simple.sbstore
 
 /home/blk-l0tus/.cache/mozilla/firefox/6c9qzquq.default/safebrowsing/google4:
 total 4336
-drwxr-xr-x 2 blk-l0tus users    4096 Dec  4 15:20 .
-drwxr-xr-x 3 blk-l0tus users    4096 Dec  4 15:20 ..
--rw-r--r-- 1 blk-l0tus users      67 Dec  4 15:20 goog-badbinurl-proto.metadata
--rw-r--r-- 1 blk-l0tus users   70284 Dec  4 15:20 goog-badbinurl-proto.pset
--rw-r--r-- 1 blk-l0tus users      65 Dec  4 15:20 goog-downloadwhite-proto.metadata
--rw-r--r-- 1 blk-l0tus users   15993 Dec  4 15:20 goog-downloadwhite-proto.pset
--rw-r--r-- 1 blk-l0tus users      67 Dec  4 15:20 goog-malware-proto.metadata
--rw-r--r-- 1 blk-l0tus users 1108320 Dec  4 15:20 goog-malware-proto.pset
--rw-r--r-- 1 blk-l0tus users      67 Dec  4 15:20 goog-phish-proto.metadata
--rw-r--r-- 1 blk-l0tus users 2835480 Dec  4 15:20 goog-phish-proto.pset
--rw-r--r-- 1 blk-l0tus users      67 Dec  4 15:20 goog-unwanted-proto.metadata
--rw-r--r-- 1 blk-l0tus users  371786 Dec  4 15:20 goog-unwanted-proto.pset
+drwxr-xr-x 2 blk-l0tus users    4096 Dec  4 15:50 .
+drwxr-xr-x 3 blk-l0tus users    4096 Dec  4 15:50 ..
+-rw-r--r-- 1 blk-l0tus users      67 Dec  4 15:51 goog-badbinurl-proto.metadata
+-rw-r--r-- 1 blk-l0tus users   70294 Dec  4 15:51 goog-badbinurl-proto.pset
+-rw-r--r-- 1 blk-l0tus users      65 Dec  4 15:50 goog-downloadwhite-proto.metadata
+-rw-r--r-- 1 blk-l0tus users   15993 Dec  4 15:50 goog-downloadwhite-proto.pset
+-rw-r--r-- 1 blk-l0tus users      67 Dec  4 15:50 goog-malware-proto.metadata
+-rw-r--r-- 1 blk-l0tus users 1108424 Dec  4 15:50 goog-malware-proto.pset
+-rw-r--r-- 1 blk-l0tus users      67 Dec  4 15:50 goog-phish-proto.metadata
+-rw-r--r-- 1 blk-l0tus users 2835908 Dec  4 15:50 goog-phish-proto.pset
+-rw-r--r-- 1 blk-l0tus users      67 Dec  4 15:51 goog-unwanted-proto.metadata
+-rw-r--r-- 1 blk-l0tus users  371790 Dec  4 15:51 goog-unwanted-proto.pset
 
 /home/blk-l0tus/.cache/mozilla/firefox/6c9qzquq.default/startupCache:
 total 10856
 drwxr-xr-x 2 blk-l0tus users    4096 Dec  4 12:40 .
-drwx------ 7 blk-l0tus users    4096 Dec  4 15:20 ..
+drwx------ 7 blk-l0tus users    4096 Dec  4 15:51 ..
 -rw-r--r-- 1 blk-l0tus users  556511 Dec  2 23:13 scriptCache-child-current.bin
 -rw-r--r-- 1 blk-l0tus users 5085813 Dec  3 23:35 scriptCache-current.bin
 -rw-r--r-- 1 blk-l0tus users 5341810 Dec  3 12:09 startupCache.8.little
@@ -5418,7 +5418,7 @@ drwx------ 7 blk-l0tus users    4096 Dec  4 15:20 ..
 /home/blk-l0tus/.cache/mozilla/firefox/6c9qzquq.default/thumbnails:
 total 432
 drwx------ 2 blk-l0tus users   4096 Dec  4 12:44 .
-drwx------ 7 blk-l0tus users   4096 Dec  4 15:20 ..
+drwx------ 7 blk-l0tus users   4096 Dec  4 15:51 ..
 -rw------- 1 blk-l0tus users  18085 Dec  2 10:50 116ab290fa46f6a65163ecbdf8b248c6.png
 -rw------- 1 blk-l0tus users  29759 Nov 26 15:56 1fa6bb1511002c7cdf269dfa0723d8ee.png
 -rw------- 1 blk-l0tus users  62481 Nov 26 15:57 2c095658ae5ace239bb35fdb24d0d269.png
@@ -8286,7 +8286,7 @@ drwx------ 54 blk-l0tus users 4096 Dec  4 15:35 Cache
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 12:45 Index
 drwx------  2 blk-l0tus users 4096 Dec  4 15:35 Installed Packages
 drwx------  3 blk-l0tus users 4096 Nov 26 14:38 Lib
-drwx------  2 blk-l0tus users 4096 Dec  4 15:42 Local
+drwx------  2 blk-l0tus users 4096 Dec  4 15:53 Local
 drwx------  9 blk-l0tus users 4096 Nov 26 14:48 Packages
 
 /home/blk-l0tus/.config/sublime-text-3/Cache:
@@ -8774,10 +8774,10 @@ drwx------ 3 blk-l0tus users    4096 Nov 26 14:48 ..
 -rw-r--r-- 1 blk-l0tus users     134 Nov 26 14:48 YAML (Yarn).sublime-syntax.cache
 
 /home/blk-l0tus/.config/sublime-text-3/Index:
-total 60
+total 68
 drwxr-xr-x 2 blk-l0tus users  4096 Dec  4 12:45 .
 drwx------ 8 blk-l0tus users  4096 Dec  4 12:45 ..
--rw-r--r-- 1 blk-l0tus users 35735 Dec  4 15:43 000003.log
+-rw-r--r-- 1 blk-l0tus users 38623 Dec  4 15:53 000003.log
 -rw-r--r-- 1 blk-l0tus users    16 Dec  4 12:45 CURRENT
 -rw-r--r-- 1 blk-l0tus users     1 Dec  4 12:45 index_version
 -rw-r--r-- 1 blk-l0tus users     0 Dec  4 12:45 LOCK
@@ -8809,9 +8809,9 @@ drwx------ 3 blk-l0tus users 4096 Nov 26 14:38 ..
 
 /home/blk-l0tus/.config/sublime-text-3/Local:
 total 32
-drwx------ 2 blk-l0tus users  4096 Dec  4 15:42 .
+drwx------ 2 blk-l0tus users  4096 Dec  4 15:53 .
 drwx------ 8 blk-l0tus users  4096 Dec  4 12:45 ..
--rw-r--r-- 1 blk-l0tus users  5285 Dec  4 15:42 Auto Save Session.sublime_session
+-rw-r--r-- 1 blk-l0tus users  6075 Dec  4 15:53 Auto Save Session.sublime_session
 -rw-r--r-- 1 blk-l0tus users   402 Nov 26 14:47 License.sublime_license
 -rw-r--r-- 1 blk-l0tus users 10325 Nov 26 16:31 Session.sublime_session
 
@@ -10060,7 +10060,7 @@ drwxr-xr-x  4 blk-l0tus users 4096 Dec  2 23:15 Assignment2
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:15 Assignment3
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 11:45 Assignment4
 drwxr-xr-x  3 blk-l0tus users 4096 Dec  3 12:48 Assignment5
-drwxr-xr-x  8 blk-l0tus users 4096 Dec  3 23:29 .git
+drwxr-xr-x  8 blk-l0tus users 4096 Dec  4 15:43 .git
 -rw-r--r--  1 blk-l0tus users   28 Dec  2 23:15 .gitignore
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:15 homework3
 drwxr-xr-x  3 blk-l0tus users 4096 Dec  2 23:15 homework4
@@ -10070,7 +10070,7 @@ drwxr-xr-x  3 blk-l0tus users 4096 Dec  2 23:15 homework4
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:15 proj1
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:15 proj2
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:15 proj3
-drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 proj4
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:50 proj4
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/Assignment1:
 total 32
@@ -10364,19 +10364,19 @@ drwxr-xr-x 5 blk-l0tus users  4096 Dec  3 12:48 ..
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git:
 total 76
-drwxr-xr-x  8 blk-l0tus users  4096 Dec  3 23:29 .
+drwxr-xr-x  8 blk-l0tus users  4096 Dec  4 15:43 .
 drwxr-xr-x 14 blk-l0tus users  4096 Dec  2 23:16 ..
 drwxr-xr-x  2 blk-l0tus users  4096 Dec  2 23:15 branches
--rw-r--r--  1 blk-l0tus users    19 Dec  3 23:29 COMMIT_EDITMSG
+-rw-r--r--  1 blk-l0tus users    16 Dec  4 15:43 COMMIT_EDITMSG
 -rw-r--r--  1 blk-l0tus users   271 Dec  2 23:15 config
 -rw-r--r--  1 blk-l0tus users    73 Dec  2 23:15 description
 -rw-r--r--  1 blk-l0tus users    88 Dec  2 23:20 FETCH_HEAD
 -rw-r--r--  1 blk-l0tus users    23 Dec  2 23:15 HEAD
 drwxr-xr-x  2 blk-l0tus users  4096 Dec  2 23:15 hooks
--rw-r--r--  1 blk-l0tus users 14746 Dec  3 23:29 index
+-rw-r--r--  1 blk-l0tus users 14826 Dec  4 15:43 index
 drwxr-xr-x  2 blk-l0tus users  4096 Dec  2 23:15 info
 drwxr-xr-x  3 blk-l0tus users  4096 Dec  2 23:15 logs
-drwxr-xr-x 74 blk-l0tus users  4096 Dec  3 23:29 objects
+drwxr-xr-x 78 blk-l0tus users  4096 Dec  4 15:43 objects
 -rw-r--r--  1 blk-l0tus users    41 Dec  2 23:20 ORIG_HEAD
 -rw-r--r--  1 blk-l0tus users   114 Dec  2 23:15 packed-refs
 drwxr-xr-x  5 blk-l0tus users  4096 Dec  2 23:15 refs
@@ -10384,12 +10384,12 @@ drwxr-xr-x  5 blk-l0tus users  4096 Dec  2 23:15 refs
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/branches:
 total 8
 drwxr-xr-x 2 blk-l0tus users 4096 Dec  2 23:15 .
-drwxr-xr-x 8 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 8 blk-l0tus users 4096 Dec  4 15:43 ..
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/hooks:
 total 52
 drwxr-xr-x 2 blk-l0tus users 4096 Dec  2 23:15 .
-drwxr-xr-x 8 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 8 blk-l0tus users 4096 Dec  4 15:43 ..
 -rwxr-xr-x 1 blk-l0tus users  478 Dec  2 23:15 applypatch-msg.sample
 -rwxr-xr-x 1 blk-l0tus users  896 Dec  2 23:15 commit-msg.sample
 -rwxr-xr-x 1 blk-l0tus users  189 Dec  2 23:15 post-update.sample
@@ -10404,14 +10404,14 @@ drwxr-xr-x 8 blk-l0tus users 4096 Dec  3 23:29 ..
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/info:
 total 12
 drwxr-xr-x 2 blk-l0tus users 4096 Dec  2 23:15 .
-drwxr-xr-x 8 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 8 blk-l0tus users 4096 Dec  4 15:43 ..
 -rw-r--r-- 1 blk-l0tus users  240 Dec  2 23:15 exclude
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/logs:
 total 16
 drwxr-xr-x 3 blk-l0tus users 4096 Dec  2 23:15 .
-drwxr-xr-x 8 blk-l0tus users 4096 Dec  3 23:29 ..
--rw-r--r-- 1 blk-l0tus users  776 Dec  3 23:29 HEAD
+drwxr-xr-x 8 blk-l0tus users 4096 Dec  4 15:43 ..
+-rw-r--r-- 1 blk-l0tus users  927 Dec  4 15:43 HEAD
 drwxr-xr-x 4 blk-l0tus users 4096 Dec  2 23:15 refs
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/logs/refs:
@@ -10425,7 +10425,7 @@ drwxr-xr-x 3 blk-l0tus users 4096 Dec  2 23:15 remotes
 total 12
 drwxr-xr-x 2 blk-l0tus users 4096 Dec  2 23:15 .
 drwxr-xr-x 4 blk-l0tus users 4096 Dec  2 23:15 ..
--rw-r--r-- 1 blk-l0tus users  776 Dec  3 23:29 master
+-rw-r--r-- 1 blk-l0tus users  927 Dec  4 15:43 master
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/logs/refs/remotes:
 total 12
@@ -10438,12 +10438,12 @@ total 16
 drwxr-xr-x 2 blk-l0tus users 4096 Dec  3 11:03 .
 drwxr-xr-x 3 blk-l0tus users 4096 Dec  2 23:15 ..
 -rw-r--r-- 1 blk-l0tus users  188 Dec  2 23:15 HEAD
--rw-r--r-- 1 blk-l0tus users  568 Dec  3 23:29 master
+-rw-r--r-- 1 blk-l0tus users  710 Dec  4 15:44 master
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects:
-total 296
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 .
-drwxr-xr-x  8 blk-l0tus users 4096 Dec  3 23:29 ..
+total 312
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 .
+drwxr-xr-x  8 blk-l0tus users 4096 Dec  4 15:43 ..
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 23:29 00
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 04
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 0e
@@ -10463,8 +10463,9 @@ drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 42
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 45
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 48
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 23:29 4a
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 4b
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 4f
-drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 54
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 54
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 11:02 59
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 5e
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 60
@@ -10472,7 +10473,7 @@ drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 6a
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 72
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 74
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 78
-drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 79
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 79
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 11:02 7c
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 11:02 7d
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 7e
@@ -10480,6 +10481,7 @@ drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 81
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 82
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 84
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 86
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 87
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 8a
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 11:02 8e
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 21:23 93
@@ -10498,12 +10500,14 @@ drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 b2
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 b3
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 b8
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 b9
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 c4
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 c5
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 ca
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 cd
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 d4
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 db
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 e1
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 e3
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 e7
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 ef
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 23:29 f1
@@ -10520,471 +10524,497 @@ drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:15 pack
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/00:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 23:29 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  162 Dec  3 23:29 3ac578082f880426c7bc7d895a5399ce4ccc14
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/04:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  775 Dec  3 12:49 a553dace3e6e6cd4a91405554a48a4c2fd257c
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/0e:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  459 Dec  3 12:49 187bd78dcf9c1a62c1e1a38e0de4e9b4c37831
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/0f:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   53 Dec  2 23:20 89352e4c2015a69bf04583a7316ff8f1d5e384
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/13:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  182 Dec  2 23:20 e4f7ac27f3773627c84e2c616f49c18d8f0e40
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/22:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  288 Dec  2 23:20 844164525431b78be4afe0af93f404af17ab8a
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/25:
 total 16
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  160 Dec  2 23:20 8db9bb006fbc91005d0cacf10830c32ea3cf9c
 -r--r--r--  1 blk-l0tus users  628 Dec  2 23:20 a45339642e1945c10f5d608cf9caae526736de
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/26:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 23:29 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  145 Dec  3 23:29 508fbddf989f7662de895169675a1a6bc66ef2
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/29:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   86 Dec  2 23:20 4f7b22f99befd3629da37bf4960584901cbbfd
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/2e:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  164 Dec  2 23:20 46ef9dc7b3ab0081f4f84ef40f5be44214b816
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/32:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 11:03 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  153 Dec  3 11:03 9628e121a4929eca583e38556a3776591ecee0
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/36:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  152 Dec  2 23:20 9a8bfcac7aa5da39ed46f32e45b06d908828f8
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/37:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  161 Dec  3 12:49 2856e7b39b29303797e87d04320e8e11425334
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/3b:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  648 Dec  3 12:49 6268cdbbb5f5c23d05aaa5846553a119a41b74
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/3d:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   84 Dec  2 23:20 fd0d53a46d03e7a1c0abda23ffcc39deada53c
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/42:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  153 Dec  2 23:20 1ce1f539f7a75dfc1ec8e7175e66c09a28576b
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/45:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  553 Dec  2 23:20 55c56a838bf3576a4cfc9b7eac9368f57c77fc
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/48:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  187 Dec  2 23:20 6d4ecb34f221efeb43ce5036d90f24974fd640
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/4a:
 total 252
 drwxr-xr-x  2 blk-l0tus users   4096 Dec  3 23:29 .
-drwxr-xr-x 74 blk-l0tus users   4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users   4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users 248215 Dec  3 23:29 ae599003ddd428e584dc0b87644b6fa6872b08
+
+/home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/4b:
+total 12
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 .
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
+-r--r--r--  1 blk-l0tus users  198 Dec  4 15:43 596850e9e71bc62f88f8a75552ffd10a62ebf5
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/4f:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  229 Dec  2 23:20 599ea63efd5c5d2e0f5807928c10c0e53a3af7
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/54:
-total 16
-drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+total 20
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 .
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
+-r--r--r--  1 blk-l0tus users  459 Dec  4 15:43 2260d529efb965dae7aaa9573cdec4475d51b9
 -r--r--r--  1 blk-l0tus users  326 Dec  2 23:20 9fd0e86d301626e84629301cdc0263bf27a5ae
 -r--r--r--  1 blk-l0tus users  176 Dec  2 23:20 e0034e94635a75efd4afddbc0589e94405a2d8
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/59:
 total 204
 drwxr-xr-x  2 blk-l0tus users   4096 Dec  3 11:02 .
-drwxr-xr-x 74 blk-l0tus users   4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users   4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users 200636 Dec  3 11:02 e4868fcd7cf8a0e331c347e1d957f0ac24fe15
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/5e:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   84 Dec  3 12:49 55520c64853b0947e112e0b75b9f77b9f76e07
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/60:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   43 Dec  2 23:20 d194e14a136b61e4abe94579b54334fa305044
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/6a:
 total 16
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  555 Dec  2 23:20 4e0436a8d7ed6fe6dabeb481457f259ad690d4
 -r--r--r--  1 blk-l0tus users  126 Dec  2 23:20 6a387675c7268fbc5a56b0fe507039e0fe9099
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/72:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  441 Dec  2 23:20 40ef6006e5345212d7b0236814cee5385d46dc
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/74:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  257 Dec  3 12:49 1d46af914058a51e93dc11a857771edda0f049
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/78:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  579 Dec  2 23:20 67f765a0d24fef07b5d2ef329e4f704929e2f5
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/79:
-total 12
-drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+total 16
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 .
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  344 Dec  2 23:20 173f231384d7d73f30a867fc7792a37f6323b1
+-r--r--r--  1 blk-l0tus users  157 Dec  4 15:43 34ac7b71c1c593093864d162d0329d32d70bad
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/7c:
 total 16
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 11:02 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   84 Dec  3 11:03 5019f20b272f16ed3696f56224d6c3b820f6cb
 -r--r--r--  1 blk-l0tus users  118 Dec  2 23:20 ff1519e163ee4d9c81fac2032edb4c0231ed24
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/7d:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 11:02 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  458 Dec  3 11:03 cf17c1ca98c596fb30e1a762d9f07ad67642bc
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/7e:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  149 Dec  2 23:20 08ca4f32d0f58fa74f390c72c960944689a5a2
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/81:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   43 Dec  2 23:20 6811c9ab5add19a0bdffb7c0612859bb72ce05
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/82:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  155 Dec  3 12:49 ad8d4ab043f14364c74090c5d2beee6b76c2a2
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/84:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  186 Dec  2 23:20 f4e6c4598d4d69c1a511dcaa0c6168484130b8
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/86:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  186 Dec  2 23:20 ae88df70765dc3264c86a04734bd8ef0943f5c
+
+/home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/87:
+total 12
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 .
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
+-r--r--r--  1 blk-l0tus users  144 Dec  4 15:43 40c1eeef7e55698db5440b4637fb0b130a26cd
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/8a:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  173 Dec  2 23:20 5fb42946e29ebaf0a9cb4dfd0ea82f9182dce1
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/8e:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 11:02 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   67 Dec  3 11:02 5443070f1c97d67f708219a0c055dfe74135ae
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/93:
 total 16
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 21:23 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  199 Dec  3 21:23 5310553cab9b36d3b1f4b9f29aef62174b9e87
 -r--r--r--  1 blk-l0tus users  165 Dec  2 23:20 c5289bac2d4a31c030b34e1b17ce6fa22e916b
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/95:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  159 Dec  2 23:20 8fdc2a1a5dbfcf6b9c5cd4d03e1858c8b03184
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/9a:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  260 Dec  2 23:20 0965d1f5d7ec548e8ce2d1d9c8db29e2c023bd
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/9c:
 total 16
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   53 Dec  2 23:20 a12e4d7f365411b4e7b7d9833ba5e82a749ddb
 -r--r--r--  1 blk-l0tus users  197 Dec  2 23:20 da31752919386f85607fc8fae14c604e3f9a8f
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/9d:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 21:23 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   84 Dec  3 21:23 1cc3de4302d472b94dc49f80356a2da378fcf1
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/9e:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   46 Dec  2 23:20 e058f0a54f3a90aac441529b9b99314459a975
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/a0:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 23:29 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  114 Dec  3 23:29 cf9107348133c4e7ad817d3b3b75baad1ffc18
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/a1:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   54 Dec  2 23:20 5079d992dfb6e94e1e424394226a73d3060c9a
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/a8:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  154 Dec  2 23:20 713c32297426265abb9a9fd31b7a68f285e98d
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/a9:
 total 16
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 21:23 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  187 Dec  2 23:20 689afd0b13b1de7ba789bee3edd181bdecb5f9
 -r--r--r--  1 blk-l0tus users  160 Dec  3 21:23 9fc2cb427e2f4d2d9e6a113d22f3a6a90248b6
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/ae:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  457 Dec  2 23:20 887a191e08f2da1de8fcc246cd3e21670e5387
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/b1:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  153 Dec  2 23:20 3631ae06dee98039d4eb6901b4c652039f3b12
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/b2:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   24 Dec  3 12:49 3614b8ebb8ccee31ac6098366bea02289b27c2
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/b3:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  186 Dec  2 23:20 90f0c0baf173cb7848eb49f774b8fb5f0979e0
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/b8:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  118 Dec  2 23:20 96eee5c496f3ba75c9ba712f9906356fd77950
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/b9:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  129 Dec  2 23:20 bd47b86f55975f241eca3451f3dad02bc88d32
+
+/home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/c4:
+total 264
+drwxr-xr-x  2 blk-l0tus users   4096 Dec  4 15:43 .
+drwxr-xr-x 78 blk-l0tus users   4096 Dec  4 15:43 ..
+-r--r--r--  1 blk-l0tus users 258813 Dec  4 15:43 bade1a64894f2444e8cc89e24b79d75b609fe8
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/c5:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   88 Dec  2 23:20 830874e969234eefb442ee4ccd41fd5d31894d
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/ca:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  176 Dec  2 23:20 88d1bbba42cc0339d88591e549b9fdf73b90c1
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/cd:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  223 Dec  2 23:20 fc432739e51310c79bb87fbf96329b0a5715b6
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/d4:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  118 Dec  2 23:20 57b02b7b4efbfa134dd6164834212d0e9ed848
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/db:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  151 Dec  2 23:20 2768ab830033cab59e08afb83c2f9ebeb3558a
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/e1:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  126 Dec  2 23:20 821514b81a80b6bcfd6946361c279d9c244788
+
+/home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/e3:
+total 12
+drwxr-xr-x  2 blk-l0tus users 4096 Dec  4 15:43 .
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
+-r--r--r--  1 blk-l0tus users  106 Dec  4 15:43 274870f5faab565647d15d4a9353abaa6f8e22
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/e7:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  111 Dec  2 23:20 79a1f7b58c3a39f0611248b6eb67acf3522eb5
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/ef:
 total 16
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  154 Dec  2 23:20 0f000f64c57a8c2be17fb1cb4c7863d310708d
 -r--r--r--  1 blk-l0tus users   38 Dec  2 23:20 39ba9cc6d338cfe92719175f506abe3d6dcca2
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/f1:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 23:29 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  459 Dec  3 23:29 33dccff0fa2a881c2a2fcfdfa24a095fba4e9f
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/f2:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 12:49 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  129 Dec  3 12:49 7ec97203365bacad06658d7a0b86b4748e29fd
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/f3:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   87 Dec  2 23:20 66d20aae1b245b101c9fe866b8da7f7af26d4d
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/f5:
 total 16
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  557 Dec  2 23:20 90958ee768dc54849f8b93068ea483e051b05d
 -r--r--r--  1 blk-l0tus users  186 Dec  2 23:20 f88a8ea275ae0a6cfd1e38c5a69f9df05574d2
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/f7:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  3 21:23 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  460 Dec  3 21:23 ab5eedd81ada5bd7eef88efd626ab9c529c8a2
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/f8:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  581 Dec  2 23:20 c63ca1dab229e710900a051be4571dda512b02
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/fe:
 total 16
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  106 Dec  2 23:20 2365697f1703a8c5221492e9062269f7b39768
 -r--r--r--  1 blk-l0tus users  186 Dec  2 23:20 2f20601e54fe47bac1c74efc9b2b22bf2bdb69
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/ff:
 total 12
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:20 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users   95 Dec  2 23:20 0e58ab7a19bc32f991e1bd3b13c27cd2af743a
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/info:
 total 8
 drwxr-xr-x  2 blk-l0tus users 4096 Dec  2 23:15 .
-drwxr-xr-x 74 blk-l0tus users 4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users 4096 Dec  4 15:43 ..
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/objects/pack:
 total 200
 drwxr-xr-x  2 blk-l0tus users   4096 Dec  2 23:15 .
-drwxr-xr-x 74 blk-l0tus users   4096 Dec  3 23:29 ..
+drwxr-xr-x 78 blk-l0tus users   4096 Dec  4 15:43 ..
 -r--r--r--  1 blk-l0tus users  11264 Dec  2 23:15 pack-18b8bd5954cf5098cbfeccf97ddf53eb5c13c6c0.idx
 -r--r--r--  1 blk-l0tus users 181817 Dec  3 11:03 pack-18b8bd5954cf5098cbfeccf97ddf53eb5c13c6c0.pack
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/refs:
 total 20
 drwxr-xr-x 5 blk-l0tus users 4096 Dec  2 23:15 .
-drwxr-xr-x 8 blk-l0tus users 4096 Dec  3 23:29 ..
-drwxr-xr-x 2 blk-l0tus users 4096 Dec  3 23:29 heads
+drwxr-xr-x 8 blk-l0tus users 4096 Dec  4 15:43 ..
+drwxr-xr-x 2 blk-l0tus users 4096 Dec  4 15:43 heads
 drwxr-xr-x 3 blk-l0tus users 4096 Dec  2 23:15 remotes
 drwxr-xr-x 2 blk-l0tus users 4096 Dec  2 23:15 tags
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/refs/heads:
 total 12
-drwxr-xr-x 2 blk-l0tus users 4096 Dec  3 23:29 .
+drwxr-xr-x 2 blk-l0tus users 4096 Dec  4 15:43 .
 drwxr-xr-x 5 blk-l0tus users 4096 Dec  2 23:15 ..
--rw-r--r-- 1 blk-l0tus users   41 Dec  3 23:29 master
+-rw-r--r-- 1 blk-l0tus users   41 Dec  4 15:43 master
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/refs/remotes:
 total 12
 drwxr-xr-x 3 blk-l0tus users 4096 Dec  2 23:15 .
 drwxr-xr-x 5 blk-l0tus users 4096 Dec  2 23:15 ..
-drwxr-xr-x 2 blk-l0tus users 4096 Dec  3 23:29 origin
+drwxr-xr-x 2 blk-l0tus users 4096 Dec  4 15:44 origin
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/refs/remotes/origin:
 total 16
-drwxr-xr-x 2 blk-l0tus users 4096 Dec  3 23:29 .
+drwxr-xr-x 2 blk-l0tus users 4096 Dec  4 15:44 .
 drwxr-xr-x 3 blk-l0tus users 4096 Dec  2 23:15 ..
 -rw-r--r-- 1 blk-l0tus users   32 Dec  2 23:15 HEAD
--rw-r--r-- 1 blk-l0tus users   41 Dec  3 23:29 master
+-rw-r--r-- 1 blk-l0tus users   41 Dec  4 15:44 master
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/.git/refs/tags:
 total 8
@@ -11048,12 +11078,12 @@ drwxr-xr-x 14 blk-l0tus users 4096 Dec  2 23:16 ..
 
 /home/blk-l0tus/Desktop/Programming/DataStructures/proj4:
 total 820
-drwxr-xr-x  2 blk-l0tus users   4096 Dec  4 15:43 .
+drwxr-xr-x  2 blk-l0tus users   4096 Dec  4 15:50 .
 drwxr-xr-x 14 blk-l0tus users   4096 Dec  2 23:16 ..
--rw-r--r--  1 blk-l0tus users 819200 Dec  4 15:43 files
+-rw-r--r--  1 blk-l0tus users 819200 Dec  4 15:53 files
 -rw-r--r--  1 blk-l0tus users    343 Dec  4 15:39 filesummary.awk
 -rw-r--r--  1 blk-l0tus users    123 Dec  4 15:42 makefile
--rw-r--r--  1 blk-l0tus users    229 Dec  3 23:19 pwfile.awk
+-rw-r--r--  1 blk-l0tus users    298 Dec  4 15:53 pwfile.awk
 
 /home/blk-l0tus/Desktop/Programming/doot-doot:
 total 36
@@ -13085,14 +13115,14 @@ drwx------ 5 blk-l0tus users 4096 Nov 26 14:37 ..
 total 24
 drwx------  5 blk-l0tus users 4096 Nov 26 14:37 .
 drwx------  5 blk-l0tus users 4096 Nov 26 14:37 ..
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 6c9qzquq.default
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 6c9qzquq.default
 drwx------  3 blk-l0tus users 4096 Dec  2 10:49 Crash Reports
 drwx------  2 blk-l0tus users 4096 Nov 26 14:37 Pending Pings
 -rw-r--r--  1 blk-l0tus users  104 Nov 26 14:37 profiles.ini
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default:
 total 17420
-drwx------ 16 blk-l0tus users    4096 Dec  4 15:42 .
+drwx------ 16 blk-l0tus users    4096 Dec  4 15:51 .
 drwx------  5 blk-l0tus users    4096 Nov 26 14:37 ..
 -rw-------  1 blk-l0tus users   26974 Dec  4 12:48 addons.json
 -rw-------  1 blk-l0tus users    1230 Dec  3 10:42 addonStartup.json.lz4
@@ -13109,7 +13139,7 @@ drwx------  7 blk-l0tus users    4096 Nov 27 16:17 browser-extension-data
 -rw-r--r--  1 blk-l0tus users   32768 Dec  4 15:40 cookies.sqlite-shm
 -rw-r--r--  1 blk-l0tus users  590288 Dec  4 15:40 cookies.sqlite-wal
 drwx------  3 blk-l0tus users    4096 Dec  4 12:40 crashes
-drwx------  3 blk-l0tus users    4096 Dec  4 15:41 datareporting
+drwx------  3 blk-l0tus users    4096 Dec  4 15:51 datareporting
 drwx------  2 blk-l0tus users    4096 Dec  2 10:38 extensions
 -rw-------  1 blk-l0tus users   65783 Dec  4 12:52 extensions.json
 -rw-r--r--  1 blk-l0tus users 5242880 Dec  4 12:39 favicons.sqlite
@@ -13127,10 +13157,10 @@ lrwxrwxrwx  1 blk-l0tus users      14 Dec  4 12:40 lock -> 10.0.2.4:+4815
 drwx------  2 blk-l0tus users    4096 Nov 26 14:37 minidumps
 -rw-r--r--  1 blk-l0tus users       0 Dec  4 12:39 .parentlock
 -rw-r--r--  1 blk-l0tus users   98304 Dec  2 10:38 permissions.sqlite
--rw-r--r--  1 blk-l0tus users 5242880 Dec  4 15:39 places.sqlite
--rw-r--r--  1 blk-l0tus users   32768 Dec  4 15:42 places.sqlite-shm
--rw-r--r--  1 blk-l0tus users 2459432 Dec  4 15:42 places.sqlite-wal
--rw-------  1 blk-l0tus users   11630 Dec  4 15:42 prefs.js
+-rw-r--r--  1 blk-l0tus users 5242880 Dec  4 15:50 places.sqlite
+-rw-r--r--  1 blk-l0tus users   32768 Dec  4 15:51 places.sqlite-shm
+-rw-r--r--  1 blk-l0tus users 2459432 Dec  4 15:51 places.sqlite-wal
+-rw-------  1 blk-l0tus users   11629 Dec  4 15:51 prefs.js
 -rw-r--r--  1 blk-l0tus users   29041 Dec  2 10:40 revocations.txt
 drwx------  2 blk-l0tus users    4096 Dec  4 12:41 saved-telemetry-pings
 -rw-------  1 blk-l0tus users   14062 Dec  3 23:35 search.json.mozlz4
@@ -13144,9 +13174,9 @@ drwx------  2 blk-l0tus users    4096 Dec  4 12:46 sessionstore-backups
 -rw-r--r--  1 blk-l0tus users    6172 Dec  4 15:35 SiteSecurityServiceState.txt
 drwxr-xr-x  5 blk-l0tus users    4096 Nov 26 14:37 storage
 -rw-r--r--  1 blk-l0tus users     512 Nov 26 14:37 storage.sqlite
--rw-r--r--  1 blk-l0tus users  131072 Dec  4 15:42 storage-sync.sqlite
+-rw-r--r--  1 blk-l0tus users  131072 Dec  4 15:51 storage-sync.sqlite
 -rwx------  1 blk-l0tus users      29 Nov 26 14:37 times.json
-drwx------  4 blk-l0tus users    4096 Dec  4 15:42 weave
+drwx------  4 blk-l0tus users    4096 Dec  4 15:51 weave
 -rw-r--r--  1 blk-l0tus users  262144 Dec  4 12:39 webappsstore.sqlite
 -rw-r--r--  1 blk-l0tus users   32768 Dec  4 12:46 webappsstore.sqlite-shm
 -rw-r--r--  1 blk-l0tus users  459120 Dec  4 12:46 webappsstore.sqlite-wal
@@ -13155,22 +13185,22 @@ drwx------  4 blk-l0tus users    4096 Dec  4 15:42 weave
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/blocklists:
 total 592
 drwx------  2 blk-l0tus users   4096 Nov 26 14:45 .
-drwx------ 16 blk-l0tus users   4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users   4096 Dec  4 15:51 ..
 -rw-------  1 blk-l0tus users 468415 Nov 26 14:45 addons.json
 -rw-------  1 blk-l0tus users 126625 Nov 26 14:45 plugins.json
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/bookmarkbackups:
 total 24
 drwx------  2 blk-l0tus users  4096 Dec  4 13:00 .
-drwx------ 16 blk-l0tus users  4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users  4096 Dec  4 15:51 ..
 -rw-------  1 blk-l0tus users  1399 Nov 26 14:37 bookmarks-2017-11-26_14_9WCb+VuI2KKbh-pXQ1dHDw==.jsonlz4
 -rw-------  1 blk-l0tus users 11706 Dec  2 23:32 bookmarks-2017-12-04_103_bVFpxk2Bq4HVHRfG9yIYtw==.jsonlz4
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/browser-extension-data:
 total 28
 drwx------  7 blk-l0tus users 4096 Nov 27 16:17 .
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 ..
-drwx------  2 blk-l0tus users 4096 Dec  4 14:47 {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 ..
+drwx------  2 blk-l0tus users 4096 Dec  4 15:51 {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}
 drwx------  2 blk-l0tus users 4096 Dec  4 12:40 jid1-93CWPmRbVPjRQA@jetpack
 drwx------  2 blk-l0tus users 4096 Dec  2 23:39 jid1-xUfzOsOFlzSOXg@jetpack
 drwx------  2 blk-l0tus users 4096 Nov 26 14:37 screenshots@mozilla.org
@@ -13178,9 +13208,9 @@ drwx------  2 blk-l0tus users 4096 Dec  4 12:40 zoompage-we@DW-dev
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/browser-extension-data/{d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}:
 total 7060
-drwx------ 2 blk-l0tus users    4096 Dec  4 14:47 .
+drwx------ 2 blk-l0tus users    4096 Dec  4 15:51 .
 drwx------ 7 blk-l0tus users    4096 Nov 27 16:17 ..
--rw------- 1 blk-l0tus users 7217950 Dec  4 14:47 storage.js
+-rw------- 1 blk-l0tus users 7217950 Dec  4 15:51 storage.js
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/browser-extension-data/jid1-93CWPmRbVPjRQA@jetpack:
 total 12
@@ -13208,7 +13238,7 @@ drwx------ 7 blk-l0tus users 4096 Nov 27 16:17 ..
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/crashes:
 total 16
 drwx------  3 blk-l0tus users 4096 Dec  4 12:40 .
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 ..
 drwx------  2 blk-l0tus users 4096 Nov 26 14:37 events
 -rw-------  1 blk-l0tus users   66 Dec  4 12:40 store.json.mozlz4
 
@@ -13219,9 +13249,9 @@ drwx------ 3 blk-l0tus users 4096 Dec  4 12:40 ..
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/datareporting:
 total 52
-drwx------  3 blk-l0tus users  4096 Dec  4 15:41 .
-drwx------ 16 blk-l0tus users  4096 Dec  4 15:42 ..
--rw-------  1 blk-l0tus users 29593 Dec  4 15:41 aborted-session-ping
+drwx------  3 blk-l0tus users  4096 Dec  4 15:51 .
+drwx------ 16 blk-l0tus users  4096 Dec  4 15:51 ..
+-rw-------  1 blk-l0tus users 29709 Dec  4 15:51 aborted-session-ping
 drwx------  4 blk-l0tus users  4096 Dec  2 10:38 archived
 -rw-------  1 blk-l0tus users   162 Dec  4 12:41 session-state.json
 -rw-------  1 blk-l0tus users    51 Nov 26 14:37 state.json
@@ -13229,7 +13259,7 @@ drwx------  4 blk-l0tus users  4096 Dec  2 10:38 archived
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/datareporting/archived:
 total 16
 drwx------ 4 blk-l0tus users 4096 Dec  2 10:38 .
-drwx------ 3 blk-l0tus users 4096 Dec  4 15:41 ..
+drwx------ 3 blk-l0tus users 4096 Dec  4 15:51 ..
 drwx------ 2 blk-l0tus users 4096 Dec  2 10:32 2017-11
 drwx------ 2 blk-l0tus users 4096 Dec  4 12:42 2017-12
 
@@ -13270,7 +13300,7 @@ drwx------ 4 blk-l0tus users  4096 Dec  2 10:38 ..
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/extensions:
 total 6984
 drwx------  2 blk-l0tus users    4096 Dec  2 10:38 .
-drwx------ 16 blk-l0tus users    4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users    4096 Dec  4 15:51 ..
 -rw-------  1 blk-l0tus users  556768 Dec  2 10:38 {1f50c5bd-711d-441f-8cdf-d2043bcce0f9}.xpi
 -rw-------  1 blk-l0tus users 1033260 Nov 26 14:37 {d10d0bf8-f5b5-c8b4-a8b2-2b9879e08c5d}.xpi
 -rw-------  1 blk-l0tus users 1872996 Dec  2 10:38 jid1-93CWPmRbVPjRQA@jetpack.xpi
@@ -13281,7 +13311,7 @@ drwx------ 16 blk-l0tus users    4096 Dec  4 15:42 ..
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/features:
 total 12
 drwx------  3 blk-l0tus users 4096 Dec  4 12:49 .
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 ..
 drwx------  2 blk-l0tus users 4096 Dec  3 10:42 {2ec71400-9c3d-40bd-9812-0c00ebb4112b}
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/features/{2ec71400-9c3d-40bd-9812-0c00ebb4112b}:
@@ -13293,7 +13323,7 @@ drwx------ 3 blk-l0tus users 4096 Dec  4 12:49 ..
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/gmp:
 total 12
 drwx------  3 blk-l0tus users 4096 Nov 26 15:56 .
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 ..
 drwx------  2 blk-l0tus users 4096 Nov 26 15:56 Linux_x86_64-gcc3
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/gmp/Linux_x86_64-gcc3:
@@ -13304,7 +13334,7 @@ drwx------ 3 blk-l0tus users 4096 Nov 26 15:56 ..
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/gmp-gmpopenh264:
 total 12
 drwxr-xr-x  3 blk-l0tus users 4096 Nov 26 14:40 .
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 ..
 drwxr-xr-x  2 blk-l0tus users 4096 Nov 26 14:40 1.7.1
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/gmp-gmpopenh264/1.7.1:
@@ -13317,24 +13347,24 @@ drwxr-xr-x 3 blk-l0tus users    4096 Nov 26 14:40 ..
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/minidumps:
 total 8
 drwx------  2 blk-l0tus users 4096 Nov 26 14:37 .
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 ..
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/saved-telemetry-pings:
 total 8
 drwx------  2 blk-l0tus users 4096 Dec  4 12:41 .
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 ..
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/sessionstore-backups:
 total 128
 drwx------  2 blk-l0tus users  4096 Dec  4 12:46 .
-drwx------ 16 blk-l0tus users  4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users  4096 Dec  4 15:51 ..
 -rw-------  1 blk-l0tus users 57396 Dec  4 12:46 recovery.baklz4
 -rw-------  1 blk-l0tus users 58089 Dec  4 12:46 recovery.jsonlz4
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/storage:
 total 20
 drwxr-xr-x  5 blk-l0tus users 4096 Nov 26 14:37 .
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 ..
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 ..
 drwxr-xr-x  6 blk-l0tus users 4096 Dec  3 12:08 default
 drwxr-xr-x  3 blk-l0tus users 4096 Nov 26 14:37 permanent
 drwxr-xr-x  4 blk-l0tus users 4096 Dec  3 11:31 temporary
@@ -13772,26 +13802,26 @@ drwxr-xr-x 3 blk-l0tus users 4096 Nov 27 17:05 ..
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/weave:
 total 24
-drwx------  4 blk-l0tus users 4096 Dec  4 15:42 .
-drwx------ 16 blk-l0tus users 4096 Dec  4 15:42 ..
--rw-------  1 blk-l0tus users 6108 Dec  4 15:42 addonsreconciler.json
-drwx------  2 blk-l0tus users 4096 Dec  4 15:42 changes
+drwx------  4 blk-l0tus users 4096 Dec  4 15:51 .
+drwx------ 16 blk-l0tus users 4096 Dec  4 15:51 ..
+-rw-------  1 blk-l0tus users 6108 Dec  4 15:51 addonsreconciler.json
+drwx------  2 blk-l0tus users 4096 Dec  4 15:51 changes
 drwx------  2 blk-l0tus users 4096 Nov 26 14:45 logs
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/weave/changes:
 total 28
-drwx------ 2 blk-l0tus users 4096 Dec  4 15:42 .
-drwx------ 4 blk-l0tus users 4096 Dec  4 15:42 ..
--rw------- 1 blk-l0tus users    2 Dec  4 15:42 addons.json
--rw------- 1 blk-l0tus users    2 Dec  4 15:42 clients.json
--rw------- 1 blk-l0tus users    2 Dec  4 15:42 forms.json
--rw------- 1 blk-l0tus users    2 Dec  4 15:42 history.json
--rw------- 1 blk-l0tus users    2 Dec  4 15:42 passwords.json
+drwx------ 2 blk-l0tus users 4096 Dec  4 15:51 .
+drwx------ 4 blk-l0tus users 4096 Dec  4 15:51 ..
+-rw------- 1 blk-l0tus users    2 Dec  4 15:51 addons.json
+-rw------- 1 blk-l0tus users    2 Dec  4 15:51 clients.json
+-rw------- 1 blk-l0tus users    2 Dec  4 15:51 forms.json
+-rw------- 1 blk-l0tus users    2 Dec  4 15:51 history.json
+-rw------- 1 blk-l0tus users    2 Dec  4 15:51 passwords.json
 
 /home/blk-l0tus/.mozilla/firefox/6c9qzquq.default/weave/logs:
 total 180
 drwx------ 2 blk-l0tus users   4096 Nov 26 14:45 .
-drwx------ 4 blk-l0tus users   4096 Dec  4 15:42 ..
+drwx------ 4 blk-l0tus users   4096 Dec  4 15:51 ..
 -rw------- 1 blk-l0tus users 125347 Nov 26 14:38 error-sync-1511725091946.txt
 -rw------- 1 blk-l0tus users  16960 Nov 26 14:38 error-sync-1511725093357.txt
 -rw------- 1 blk-l0tus users  11674 Nov 26 14:38 error-sync-1511725093725.txt
