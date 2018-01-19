@@ -1,25 +1,46 @@
+class MyLinkedList<T> {
 
-class MyNode<T> {
-    T data;
-    MyNode next;
-}
+    Node head;
 
-public class MyLinkedList<MyNode> {
-    private MyNode head;
-    private MyNode next;
+    class Node {
+        T data;
+        Node next;
 
-    public MyLinkedList() { }
-
-    public MyLinkedList(MyNode head, MyNode next) {
-       this.head = head;
-       this.next = next;
+        public Node(T d) {
+           data = d;
+           next = null;
+        }
     }
 
-    public void Print(MyNode head) {
-        MyNode temp = head;
+    public MyLinkedList() {
+       head = null;
+    }
 
-        while (temp != null) {
+    public boolean isEmpty() {
+        return head == null;
+    }
 
+    public void insertAtHead(T data) {
+       if (head != null) {
+           Node newNode = new Node(data);
+           newNode.next = head;
+           head = newNode;
+       } else {
+           // If head null, then set head equal to a new node with data
+           head = new Node(data);
+       }
+    }
+
+    public void insertAtTail(T data) {
+        if (head != null) {
+            Node temp = head;
+
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+
+            Node newNode = new Node(data);
+            newNode.next = temp;
         }
     }
 }
