@@ -1,6 +1,6 @@
 class MyLinkedList<T> {
 
-    protected Node head, previous, next;
+    protected Node head, last;
     int size;
 
     class Node {
@@ -24,8 +24,7 @@ class MyLinkedList<T> {
     public MyLinkedList() {
        head = null;
        size = 0;
-       previous = null;
-       next = null;
+       last = null;
     }
 
     public boolean isEmpty() {
@@ -36,17 +35,12 @@ class MyLinkedList<T> {
         return size;
     }
 
-    public Node getFirst() {
-        return head;
+    public T getFirst() {
+        return head.data;
     }
 
-    public Node getLast() {
-        Node temp = head;
-        while (temp.next != null) {
-            // Iterate to the end of the list
-            temp = temp.next;
-        }
-        return temp;
+    public T getLast() {
+        return last.data;
     }
 
     // Insert at the front of the Linked List
@@ -55,12 +49,18 @@ class MyLinkedList<T> {
             Node temp = new Node();
             temp.data = data;
             head = temp;
-        }
-
-        Node newHead = new Node(data, null, head.prev);
-        head.next = newHead;
-        head = newHead;
-        size++;
+        } else if (size == 1) {
+            Node newHead = new Node(data, null, head.prev);
+            last = head;
+            head.next = newHead;
+            head = newHead;
+            size++;
+        } //else {
+            Node newHead = new Node(data, null, head.prev);
+            head.next = newHead;
+            head = newHead;
+            size++;
+        //}
     }
 
     public void addLast(T data) {
@@ -70,25 +70,43 @@ class MyLinkedList<T> {
             head = temp;
         }
 
-        Node temp = head;
-        while (temp.next != null) {
-            temp = temp.next;
-        }
-        Node newTail = new Node(data, temp, null);
-        newTail.next = temp;
-        size++;
+        last = new Node(data, last, null);
     }
 
     public boolean contains(T data) {
-        Node temp = head;
+        Node temp = last;
 
         while (temp != null) {
-            if (temp.data == data)
-                break;
-            else
+            if (temp.data == data) {
+                return true;
+            }
+            else {
                 temp = temp.next;
-            return true;
+            }
         }
         return false;
+    }
+
+    public void print() {
+        Node temp = last;
+        while (temp != null) {
+            System.out.print(temp.data + "-->");
+            temp = temp.next;
+        }
+    }
+
+    public static void main(String[] args) {
+        // Initialize an empty linked list
+        MyLinkedList<Integer> linkedList = new MyLinkedList<>();
+        linkedList.addFirst(1);
+        linkedList.addFirst(2);
+        linkedList.addLast(3);
+        linkedList.addLast(5);
+        System.out.println(linkedList.contains(969));
+        System.out.println(linkedList.contains(5));
+        System.out.println(linkedList.contains(2));
+        System.out.println(linkedList.getFirst());
+        System.out.println(linkedList.getLast());
+        linkedList.print();
     }
 }
