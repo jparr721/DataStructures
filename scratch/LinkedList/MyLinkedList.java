@@ -49,7 +49,7 @@ class MyLinkedList<T> {
             Node temp = new Node();
             temp.data = data;
             head = temp;
-        } else if (size == 1) {
+        } else if (size >= 1) {
             Node newHead = new Node(data, null, head.prev);
             last = head;
             head.next = newHead;
