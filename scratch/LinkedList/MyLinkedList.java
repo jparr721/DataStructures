@@ -49,18 +49,27 @@ class MyLinkedList<T> {
             Node temp = new Node();
             temp.data = data;
             head = temp;
-        } else if (size >= 1) {
-            Node newHead = new Node(data, null, head.prev);
+            head.next = null;
+            head.prev = null;
+            size++;
+        } else if (size == 1) {
+            Node temp = head;
+            Node newHead = new Node();
+            newHead.data = data;
             last = head;
             head.next = newHead;
             head = newHead;
+            head.prev = temp;
             size++;
-        } //else {
-            Node newHead = new Node(data, null, head.prev);
+        } else {
+            Node temp = head;
+            Node newHead = new Node();
+            newHead.data = data;
             head.next = newHead;
             head = newHead;
+            head.prev = temp;
             size++;
-        //}
+        }
     }
 
     public void addLast(T data) {
@@ -87,6 +96,12 @@ class MyLinkedList<T> {
         return false;
     }
 
+    public void remove() {
+        System.out.println("Previous head " + head.data);
+        head = head.prev;
+        System.out.println("New head " + head.data);
+    }
+
     public void print() {
         Node temp = last;
         while (temp != null) {
@@ -102,11 +117,15 @@ class MyLinkedList<T> {
         linkedList.addFirst(2);
         linkedList.addLast(3);
         linkedList.addLast(5);
+        linkedList.addFirst(7);
+        linkedList.addFirst(10);
         System.out.println(linkedList.contains(969));
         System.out.println(linkedList.contains(5));
         System.out.println(linkedList.contains(2));
         System.out.println(linkedList.getFirst());
         System.out.println(linkedList.getLast());
+        linkedList.remove();
+        System.out.println("The head: " + linkedList.head.data);
         linkedList.print();
     }
 }
