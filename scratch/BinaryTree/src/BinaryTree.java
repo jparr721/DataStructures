@@ -26,16 +26,61 @@ public class BinaryTree {
         return root == null;
     }
 
+    private static void inorderTraversal(Node root) {
+        if (root != null) {
+            inorderTraversal(root.left);
+            System.out.print(root.data + " ");
+            inorderTraversal(root.right);
+        }
+    }
+
+    private static void postorderTraversal(Node root) {
+        if (root != null) {
+            postorderTraversal(root.left);
+            postorderTraversal(root.right);
+            System.out.println(root.data + " ");
+        }
+    }
+
     public static void insert(int data) {
         Node temp = root;
         Queue<Node> q = new LinkedList<Node>();
         q.add(root);
-        System.out.println(q.peek());
+
+        while (!q.isEmpty()) {
+            temp = q.peek();
+            q.remove();
+
+            if (temp.left == null) {
+                temp.left = new Node(data);
+                break;
+            } else {
+                q.add(temp.left);
+            }
+
+            if (temp.right == null) {
+                temp.right = new Node(data);
+                break;
+            } else {
+                q.add(temp.right);
+            }
+        }
     }
 
+
     public static void main(String[] args) {
-        BinaryTree b = new BinaryTree();
-        b.root = new Node(10);
-        b.insert(1);
+        root = new Node(10);
+        root.left = new Node(12);
+        root.left.left = new Node(8);
+        root.right = new Node(13);
+        root.right.right = new Node(22);
+        root.right.left = new Node(16);
+
+        System.out.println("Before insertion");
+        inorderTraversal(root);
+
+        insert(18);
+        System.out.println("\nAfter insertion");
+        inorderTraversal(root);
     }
 }
