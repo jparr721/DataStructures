@@ -1,5 +1,10 @@
 import java.util.*;
-
+/**
+  * This code takes a string and compresses it
+  * Example: "aaabbcccc" --> a3b2c4
+  * If the resulting string is longer than the original, 
+  * then we return the original.
+  */
 class Compress {
 	
 	public String compressString(String str) {
@@ -18,7 +23,7 @@ class Compress {
 				count = 0;
 			}
 		}
-		return sb.toString();
+		return sb.toString().length() < str.length() ? sb.toString() : str;
 	}
 
 	public static void main(String[] args) {

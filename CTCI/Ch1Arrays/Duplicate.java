@@ -1,4 +1,11 @@
 import java.util.*;
+/**
+  * This class checks for duplicate charatcers within
+  * an input string and returns true if there are 
+  * and false otherwise.
+  * Example: "abracadabra" --> true
+  * Example: "Orange" --> false
+  */
 
 class Duplicate {
 	public boolean isUnique(String str) {
