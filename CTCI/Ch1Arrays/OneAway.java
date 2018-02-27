@@ -1,5 +1,13 @@
 import java.util.*;
 import java.lang.Math;
+/**
+  * Checks between two strings to see if they have only
+  * one difference (one-char removal, one-char addition, one-char change)
+  * Examples:
+  * peak, peak --> True
+  * park, dark --> True
+  * dinoasaur, skeletor --> False
+  */
 
 class OneAway {
 	public boolean oneAway(String s1, String s2) {
