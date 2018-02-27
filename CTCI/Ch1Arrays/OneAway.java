@@ -13,7 +13,7 @@ class OneAway {
 	public boolean oneAway(String s1, String s2) {
 		HashMap<Character, Integer> map = new HashMap<>();
 
-		if (Math.abs(s1.length() - s2.length()) > 2) {
+		if (Math.abs(s1.length() - s2.length()) > 1) {
 			return false;
 		}
 
