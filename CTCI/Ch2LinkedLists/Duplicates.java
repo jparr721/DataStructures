@@ -3,7 +3,7 @@ import java.util.*;
   * This class removes the duplicates from a 
   * Linked List
   * Examples:
-  * 3-->3-->4-->5-->1-->END => 4-->5-->-->1-->END
+  * 3-->3-->4-->5-->1-->END => 4-->5-->1-->END
   */
 
 public class Duplicates {
