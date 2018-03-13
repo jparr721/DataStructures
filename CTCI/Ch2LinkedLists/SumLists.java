@@ -5,8 +5,8 @@ import java.lang.*;
   * sums their total values in reverse and normal
   * order.
   * Example:
-  * 6->1->7 + 7->1->9 = 1336 (reversed)
-  * 7->1->6 + 9->1->7 = 1336 (non-reversed)
+  * 6-->1-->7 + 7-->1-->9 = 1336 (reversed)
+  * 7-->1-->6 + 9-->1-->7 = 1336 (non-reversed)
   */
 
 public class SumLists {
