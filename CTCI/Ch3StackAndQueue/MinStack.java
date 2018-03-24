@@ -1,5 +1,12 @@
 import java.util.*;
 
+/**
+* This is a stack implementation that returns
+* the miniumum value in O(1) time.
+*
+* Ex:
+* TOP: 11, 13, 4, 5, 8, 9 --> min = 4
+*/
 public class MinStack {
     ArrayList<Integer> stack = new ArrayList<>();
     ArrayList<Integer> minStack = new ArrayList<>();
