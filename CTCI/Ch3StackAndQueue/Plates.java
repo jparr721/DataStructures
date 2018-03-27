@@ -1,5 +1,10 @@
 import java.util.*;
 import java.io.*;
+/**
+ * This class implementes a set of stacks which, after
+ * reaching a certain capacity, will begin a new stack
+ * with the values etc. 
+ */
 
 public class Plates {
     int size = 0;
