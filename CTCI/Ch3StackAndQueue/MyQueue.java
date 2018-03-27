@@ -1,4 +1,8 @@
 import java.util.*;
+/**
+ * MyQueue is a queue class that is implemented
+ * using only two stacks.
+ */
 
 public class MyQueue {
     Stack<Integer> regStack, queueStack;
