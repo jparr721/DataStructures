@@ -16,8 +16,6 @@ class Stack:
 
     def search(self, value):
         for i in range(len(self.stack) - 1):
-            if value == self.stack[i]
+            if value in self.stack[i]:
                 return i
-        return None 
-
-
+        return None
