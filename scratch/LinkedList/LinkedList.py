@@ -5,56 +5,39 @@ class Node(object):
         self.next_node = next_node
         self.prev_node = prev_node
 
-    def new_node(self, new_data, new_next, new_prev):
-        self.data = new_data
-        self.next_node = new_next
-        self.prev_node = new_prev
-
 
 class LinkedList:
 
-    def __init__(self, data=None, head=None, tail=None, size=0):
-        self.data = data
-        self.head = head
-        self.tail = tail
-        self.size = size
+    head = None
+    tail = None
 
+    @property
     def is_empty(self) -> bool:
         return self.head is None
 
+    @property
     def get_size(self) -> int:
         return self.size
 
+    @property
     def get_first(self):
         return self.head.data
 
+    @property
     def get_last(self):
         return self.tail.data
 
-    def insert(self, new_data):
+    def insert(self, new_data: any):
+        new_node = Node(new_data, None, None)
         if self.head is None:
-            temp = Node(new_data)
-            self.head = temp
-            self.head.next_node = None
-            self.head.prev_node = None
-            self.size += 1
-        elif self.size is 1:
-            temp = self.head
-            new_head = Node(new_data)
-            self.tail = self.head
-            self.head.next_node = new_head
-            self.head = new_head
-            self.head.prev_node = temp
-            self.size += 1
+            self.head = self.tail = new_node
         else:
-            temp = self.head
-            new_head = Node(new_data)
-            self.head.next_node = new_head
-            self.head = new_head
-            self.head.prev_node = temp
-            self.size += 1
+            new_node.prev = self.tail
+            new_node.next = None
+            self.tail.next = new_node
+            self.tail = new_node
 
-    def insert_last(self, new_data):
+    def insert_last(self, new_data: any):
         if self.head is None:
             temp = Node(new_data)
             self.head = temp
@@ -66,24 +49,24 @@ class LinkedList:
         self.head = temp
         self.head.next_node = None
 
-    def contains(self, value) -> bool:
+    def contains(self, value: any) -> bool:
         temp = self.head
 
-        while(temp is not None):
+        while temp is not None:
             if temp.data is value:
                 return True
-            else:
-                temp = temp.next_node
+            temp = temp.next_node
         return False
 
     def print_elements(self):
-        temp = self.tail
+        temp = self.head
 
-        while(temp is not None):
+        while temp is not None:
             if temp.next_node is not None:
-                print('%d-->' % temp.data, end='')
+                print('{}-->'.format(temp.data), end='')
             else:
-                print('%d' % temp.data, end='')
+                print(f'{temp.data}', end='')
+
             temp = temp.next_node
 
 
@@ -93,8 +76,7 @@ def main():
     ll.insert(2)
     ll.insert(5)
     ll.insert(10)
-    ll.insert_last(50)
-    ll.delete_front()
+    #ll.insert_last(50)
     ll.print_elements()
 
 
