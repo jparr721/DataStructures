@@ -11,7 +11,6 @@ def palPerm(string):
     for letter in string:
         count = 0
         if letter in matches:
-            print(count)
             count = matches.get(letter)
         matches[letter] = count + 1
 
