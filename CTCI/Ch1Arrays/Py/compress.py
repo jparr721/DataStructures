@@ -7,9 +7,11 @@ word is longer than the original,
 the original gets returned
 """
 
+from collections import defaultdict
+
 
 def compress(s):
-    compress = {}
+    compress = defaultdict(int)
     s = s.lower()
     for letter in s:
         count = 0
