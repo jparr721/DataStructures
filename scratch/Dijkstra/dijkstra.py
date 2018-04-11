@@ -1,26 +1,58 @@
 from copy import deepcopy
 
+# Testing Graphs
 graph = {}
 graph["A"] = [["B", 10], ["D", 5]]
 graph["B"] = [["A", 10], ["C", 5]]
+graph["C"] = [["B", 5], ["D", 15]]
+graph["D"] = [["C", 15], ["A", 5]]
+og = {}
+og["A"] = 0
+og["B"] = 10
+og["C"] = 10
+og["D"] = 15
+v = ["B", "C", "D"]
 
 
 def infty(graph):
-    """
-    Why did you make me do this father
-    """
     total = 0
-    for weight in graph.items():
-        for val in weight:
-            for numberList in val:
-                for number in numberList:
-                    if type(number) == int:
-                        total += number
-
+    visited = []
+    for key, value in graph.items():
+        if key in visited:
+            continue
+        visited.append(key)
+        for sub_key in value:
+            if sub_key[0] not in visited:
+                total += sub_key[1]
     return total + 1
 
-def initial(graph):
 
+def initial(graph):
+    inf = infty(graph)
+    edges = {}
+    for key, _ in graph.items():
+        if key == "A":
+            edges[key] = 0
+        else:
+            edges[key] = inf
+    return edges
+
+
+def find_min(graph, verticies):
+    smallest = 100000000
+    small = None
+    for vertex in verticies:
+        if graph.get(vertex) < smallest:
+            small = vertex
+            smallest = graph.get(vertex)
+    return small
+
+
+def dijkstra(graph):
+    ref = graph.deepcopy()
+    graph = initial(graph)
 
 
 print(infty(graph))
+# print(initial(graph))
+# print(find_min(og, v))
