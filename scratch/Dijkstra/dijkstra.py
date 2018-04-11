@@ -1,5 +1,3 @@
-from copy import deepcopy
-
 # Testing Graphs
 graph = {}
 graph["A"] = [["B", 10], ["D", 5]]
@@ -13,8 +11,11 @@ og["C"] = 10
 og["D"] = 15
 v = ["B", "C", "D"]
 
+proper_coloring = {}
+
 
 def infty(graph):
+    global proper_coloring
     total = 0
     visited = []
     for key, value in graph.items():
@@ -24,6 +25,7 @@ def infty(graph):
         for sub_key in value:
             if sub_key[0] not in visited:
                 total += sub_key[1]
+                proper_coloring[sub_key[0]] = sub_key[1]
     return total + 1
 
 
@@ -49,10 +51,25 @@ def find_min(graph, verticies):
 
 
 def dijkstra(graph):
-    ref = graph.deepcopy()
-    graph = initial(graph)
+    global proper_coloring
+    proper_coloring["A"] = 0
+    infty(graph)
+    print(proper_coloring)
+
+    visited = []
+    init = initial(graph)
+    init["A"] = 0
+    for key, value in graph.items():
+        verticies = []
+        for vertex in value:
+            if vertex[0] not in visited:
+                verticies.append(vertex[0])
+        next_val = find_min(proper_coloring, verticies)
+        for vertex in value:
+            if vertex[0] == next_val:
+                init[next_val] = min(vertex[1], init.get(next_val))
+                visited.append(next_val)
+    return init
 
 
-print(infty(graph))
-# print(initial(graph))
-# print(find_min(og, v))
+print(dijkstra(graph))
