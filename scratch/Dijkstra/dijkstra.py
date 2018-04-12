@@ -11,11 +11,7 @@ og["C"] = 10
 og["D"] = 15
 v = ["B", "C", "D"]
 
-proper_coloring = {}
-
-
 def infty(graph):
-    global proper_coloring
     total = 0
     visited = []
     for key, value in graph.items():
@@ -25,7 +21,6 @@ def infty(graph):
         for sub_key in value:
             if sub_key[0] not in visited:
                 total += sub_key[1]
-                proper_coloring[sub_key[0]] = sub_key[1]
     return total + 1
 
 
@@ -51,25 +46,14 @@ def find_min(graph, verticies):
 
 
 def dijkstra(graph):
-    global proper_coloring
-    proper_coloring["A"] = 0
-    infty(graph)
-    print(proper_coloring)
-
-    visited = []
     init = initial(graph)
-    init["A"] = 0
-    for key, value in graph.items():
-        verticies = []
-        for vertex in value:
-            if vertex[0] not in visited:
-                verticies.append(vertex[0])
-        next_val = find_min(proper_coloring, verticies)
-        for vertex in value:
-            if vertex[0] == next_val:
-                init[next_val] = min(vertex[1], init.get(next_val))
-                visited.append(next_val)
+    for key in graph:
+        for edge in graph[key]:
+            if init[key] + edge[1] < init[edge[0]]:
+                init[edge[0]] = init[key] + edge[1]
     return init
 
+
+def is_connected(graph):
 
 print(dijkstra(graph))
