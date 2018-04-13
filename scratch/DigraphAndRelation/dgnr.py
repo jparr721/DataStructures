@@ -1,3 +1,5 @@
+from copy import deepcopy
+
 ground = ['A', 'B', 'C', 'D', 'E']
 rel1 = [
         ['A', 'A'], ['A', 'D'],
@@ -16,11 +18,16 @@ rel3 = [
         ['A', 'C'], ['A', 'D'], ['B', 'D'],
         ['C', 'D'], ['C', 'C']
         ]
+digraph = {}
+digraph['A'] = ['B']
+digraph['B'] = ['C']
+digraph['C'] = ['B']
+digraph['D'] = ['A', 'C']
 
 
 def is_reflex(ground, relation):
     """
-    This functiont takes the ground set and
+    This function takes the ground set and
     all of the relations of the set and determines
     if there is a reflexive relationship present
     """
@@ -41,8 +48,6 @@ def is_sym(ground, relation):
     and a relation and determines if
     there exists a symmetric relationship
     """
-    # Set the match counter to 0
-    matches = 0
     # Begin iteration through the relations
     for rel in relation:
         # If the first value appears, then we grab and
@@ -51,10 +56,10 @@ def is_sym(ground, relation):
         flipped.append(rel[1])
         flipped.append(rel[0])
         # For each flipped val check if it exists
-        if flipped in relation:
-            matches += 1
+        if flipped not in relation:
+            return False
     # Number of matches should equal the length of the relation
-    return matches == len(relation)
+    return True
 
 
 def is_antisym(ground, relation):
@@ -82,11 +87,38 @@ def is_trans(ground, relation):
     a relation and determines if there
     exists a a transitive relationship
     """
-    for rel in relation:
-        comp = []
+    # Brute force check literally every combination
+    # Who needs good code efficiency? Amirite?
+    for a in ground:
+        for b in ground:
+            for c in ground:
+                ab = [a, b]
+                bc = [b, c]
+                ac = [a, c]
+                if ab in relation and bc in relation and ac not in relation:
+                    return False
+    return True
 
 
+def trans_clos(digraph):
+    """
+    This function checks the provided
+    digraph and creates a transitive closure
+    with the provided points via the floyd-
+    warshall algorithm
+    """
+    closure = deepcopy(digraph)
+    # Iterate throught digraph rows
+    for key in digraph:
+        for col in digraph:
+            if col in closure[key]:
+                # Check nearby values to see if theyre inf
+                for neighbor in closure[col]:
+                    # If the neighbor is found but not in the closure
+                    # then we add it
+                    if neighbor not in closure[key]:
+                        closure[key].append(neighbor)
+    return closure
 
-print(is_antisym(ground, rel1))
-print(is_antisym(ground2, rel2))
-print(is_antisym(ground3, rel3))
+
+print(trans_clos(digraph))
