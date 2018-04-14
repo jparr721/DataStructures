@@ -25,6 +25,7 @@ def infty(graph):
         # Reset to the next val if it was already visited
         if key in visited:
             continue
+        # Mark the value as visited
         visited.append(key)
         for sub_key in value:
             if sub_key[0] not in visited:
