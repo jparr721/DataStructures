@@ -1,18 +1,20 @@
 """
-This algorithm removes dupliactes 
+This algorithm removes dupliactes
 from a Linked List
 """
+
 
 class Node(object):
     def __init__(self, data=None, next_node=None):
         self.data = data
         self.next_node = next_node
 
+
 class LinkedList:
     head = None
 
     @property
-    def print():
+    def print(self):
         temp = self.head
         while temp is not None:
             print(temp.data + '-->')
@@ -21,7 +23,7 @@ class LinkedList:
     def insert(self, data):
         new_node = Node(data, None)
         if self.head is None:
-            self.head = newNode
+            self.head = new_node
         new_node.next_node = self.head
         self.head = new_node
 

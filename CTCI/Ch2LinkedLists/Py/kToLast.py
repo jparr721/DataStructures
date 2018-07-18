@@ -1,15 +1,16 @@
 class Node(object):
-    def __init__(self, data=None, next_node = None):
+    def __init__(self, data=None, next_node=None):
         self.data = data
         self.next_node = next_node
+
 
 class LinkedList:
     head = None
 
     def insert(self, data):
         new_node = Node(data, None)
-        if head is None:
-            head = new_node
+        if self.head is None:
+            self.head = new_node
         new_node.next_node = self.head
         self.head = new_node
 
