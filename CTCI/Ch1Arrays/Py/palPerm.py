@@ -14,8 +14,6 @@ def palPerm(string):
             count = matches.get(letter)
         matches[letter] = count + 1
 
-    print(matches)
-
     diffs = 0
     for item in list(matches.values()):
         if item < 2:
