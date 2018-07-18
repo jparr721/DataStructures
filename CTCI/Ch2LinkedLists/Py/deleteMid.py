@@ -38,10 +38,7 @@ def main():
     ll.insert(10)
     ll.insert(20)
     ll.insert(100)
-    ll.print_elements()
-    print('\n')
     h = ll.head.next_node
-    print('{} \n'.format(h.data))
     ll.deleteMid(h)
     ll.print_elements()
 
