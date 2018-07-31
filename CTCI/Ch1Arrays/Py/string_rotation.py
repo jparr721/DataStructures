@@ -24,7 +24,14 @@ def string_rotation(s1, s2):
             return True
     return False
 
+def string_rotation_option(s1, s2):
+    return is_substring((s1 + s1), s2) if len(s1) == len(s2) else False
+
 print(string_rotation('waterbottle', 'erbottlewat'))
 print(string_rotation('water', 'rwate'))
 print(string_rotation('lala', 'laul'))
+print('Other method')
+print(string_rotation_option('waterbottle', 'erbottlewat'))
+print(string_rotation_option('water', 'rwate'))
+print(string_rotation_option('lala', 'laul'))
 
