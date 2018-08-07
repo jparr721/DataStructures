@@ -58,16 +58,12 @@ def partition(linked_list, node):
             big_list.insert(temp.data)
         temp = temp.next_node
 
-    # print('=======================\n')
-    # small_list.print_list
-    # print('========================\n')
-    # big_list.print_list
-    # print('========================\n')
     small_list.next_node = big_list
     print('\n')
     small_list.print_list
     print('\n')
     return small_list
+
 
 def main():
     ll = LinkedList(None)
@@ -82,5 +78,6 @@ def main():
     new_list = partition(ll, 5)
     print('----------------------------')
     new_list.print_list
+
 
 main()
