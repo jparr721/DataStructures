@@ -8,7 +8,7 @@ def goat_latin(in_str):
     vowels = ['a', 'e', 'i', 'o', 'u']
     words = in_str.split(' ')
 
-    for i in range(0, len(words)):
+    for i in range(len(words)):
         if words[i][0] not in vowels:
             old_char = words[i][0]
             new_word = words[i].replace(words[i][0], '')
@@ -18,7 +18,7 @@ def goat_latin(in_str):
             new_word = word + 'ma'
             words[i] = new_word
 
-    for i in range(0, len(words)):
+    for i in range(len(words)):
         numA = i + 1
         words[i] = words[i] + 'a'*numA
 
