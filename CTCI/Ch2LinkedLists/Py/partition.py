@@ -12,6 +12,7 @@ class Node(object):
         self.data = data
         self.next_node = next_node
 
+
 class LinkedList(object):
     def __init__(self, head=None):
         self.head = head
