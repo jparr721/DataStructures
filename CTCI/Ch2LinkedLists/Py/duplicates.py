@@ -17,7 +17,7 @@ class LinkedList:
     def print(self):
         temp = self.head
         while temp is not None:
-            print(temp.data + '-->')
+            print(temp.data + '-->', end='')
             temp = temp.next_node
 
     def insert(self, data):
