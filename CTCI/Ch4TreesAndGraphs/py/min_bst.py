@@ -43,6 +43,7 @@ def min_bst(l):
     for v in l:
         insert(root_node, v)
 
+    # print the BST
     inorder(root_node)
 
 
