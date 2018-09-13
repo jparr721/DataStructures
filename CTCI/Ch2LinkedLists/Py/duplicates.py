@@ -24,8 +24,9 @@ class LinkedList:
         new_node = Node(data, None)
         if self.head is None:
             self.head = new_node
-        new_node.next_node = self.head
-        self.head = new_node
+        else:
+            new_node.next_node = self.head
+            self.head = new_node
 
     def remove(self, data):
         temp = self.head
