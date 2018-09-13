@@ -1,6 +1,6 @@
 """
-Given a sorted array, create a minimum
-binary search tree
+Create a minimal sized binary
+search tree from a sorted array
 """
 
 
@@ -43,6 +43,7 @@ def min_bst(l):
     for v in l:
         insert(root_node, v)
 
+    # print the BST
     inorder(root_node)
 
 
