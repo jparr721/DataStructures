@@ -14,14 +14,7 @@ class UniqueString {
         auto found = occur.find(s);
         if (found == occur.end()) {
           occur[s] = 1;
-          continue;
-        }
-        occur[s]++;
-      }
-      for (const auto& o : occur) {
-        if (o.second > 1) {
-          return false;
-        }
+        } else { return false; }
       }
 
       return true;
