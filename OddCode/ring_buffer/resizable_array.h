@@ -1,8 +1,8 @@
 #ifndef RING_BUFFER_RESIZABLE_ARRAY_H
 #define RING_BUFFER_RESIZABLE_ARRAY_H
 
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct {
   char* title;
