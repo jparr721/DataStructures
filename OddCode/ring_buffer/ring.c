@@ -32,6 +32,7 @@ void buffer_reset(struct ring_buffer* rb) {
 bool buffer_full(struct ring_buffer* rb) {
   assert(rb);
 
+  remove_value(rb->ray, rb->head);
   return rb->full;
 }
 

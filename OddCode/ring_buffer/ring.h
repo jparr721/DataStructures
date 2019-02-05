@@ -15,6 +15,7 @@ struct ring_buffer {
 
 void push(struct ring_buffer* rb, BuffNode bn);
 void offer(struct ring_buffer* rb, BuffNode bn);
+void remove_value(RArray* array, int index);
 void buffer_reset(struct ring_buffer* rb);
 void init_ring_buffer();
 

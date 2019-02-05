@@ -14,7 +14,20 @@ void append(RArray* array, BuffNode element) {
   array->array[array->used++] = element;
 }
 
-void freeArray(RArray *array) {
+void remove_value(RArray* array, size_t index) {
+  int len = sizeof(array->array)/sizeof(array->array) - 1;
+  if (index > len) {
+    perror("Array index out of bounds");
+    return;
+  }
+
+  //  Overwrite old values and move the rest
+  for (int i = index; i < len - 1; ++i) {
+    array->array[i] = array->array[i + 1];
+  }
+}
+
+void freeArray(RArray* array) {
   free(array->array);
   array->array = NULL;
   array->used = array->size = 0;
