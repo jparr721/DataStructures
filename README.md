@@ -1,2 +1,2 @@
 # DataStructures
-Coding interviews are scary
+Coding interviews are ~~scary~~ a breeze *sunglasses emoji*
