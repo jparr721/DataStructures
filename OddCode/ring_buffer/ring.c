@@ -27,7 +27,7 @@ void offer(struct ring_buffer* rb, BuffNode bn) {
 void buffer_reset(struct ring_buffer* rb) {
   assert(rb);
 
-  // TODO: Call array delete method
+  free_array(rb->ray);
   rb->head = 0;
   rb->tail = 0;
   rb->full = false;
