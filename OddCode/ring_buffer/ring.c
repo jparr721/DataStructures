@@ -49,6 +49,7 @@ size_t buffer_size(struct ring_buffer* rb) {
 
 // Pops the first element off of the front of the queue
 BuffNode pop(RArray* ra) {
+  struct BuffNode bn = ra->array[rb->head];
   remove_value(rb->ray, rb->head);
-  return ra->array[rb->head];
+  return bn;
 }
