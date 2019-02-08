@@ -5,11 +5,17 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+// Defines the ring buffer struct
 struct ring_buffer {
+  // Our resizable array
   RArray* ray;
+  // Our reference to the head of the list
   size_t head;
+  // Our reference to the tail of the list
   size_t tail;
+  // Our max size
   size_t max;
+  // Whether or not it's full
   bool full;
 };
 
