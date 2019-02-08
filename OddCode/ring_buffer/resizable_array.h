@@ -4,11 +4,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Defines a buffer node which holds the data, in this case, our title and body of each passage of text
 typedef struct {
   char* title;
   char* body;
 } BuffNode;
 
+// Our resizable array parameters
 typedef struct {
   BuffNode* array;
   size_t used;
