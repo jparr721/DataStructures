@@ -1,97 +1,137 @@
 #include "knapsack.h"
-#include <stack>
+#include <algorithm>
+#include <fstream>
+#include <memory>
 #include <numeric>
+#include <queue>
 
-node::node(int value, int weight) {
-  value = value;
-  weight = weight;
-  left = nullptr;
-  right = nullptr;
-  selected = false;
-}
+std::pair<std::vector<int>, int> Knapsack::solve(int n, int k) {
+  // Sort by best ratio
+  std::sort(inputs_.begin(), inputs_.end(),
+      [&](const std::pair<int, int> a, const std::pair<int, int> b) {
+        auto ratio_1 = std::get<0>(a) / std::get<1>(a);
+        auto ratio_2 = std::get<0>(b) / std::get<1>(b);
 
-void Knapsack::solve() {
+        return ratio_1 < ratio_2;
+      });
+
   int best_optimistic_evaluation = 0;
+  std::queue<node> q;
 
-  // Get our k and n values
-  auto n = std::get<0>(inputs_[0]);
-  auto k = std::get<1>(inputs_[0]);
+  node dummy_node, v;
+  dummy_node.weight = 0;
+  dummy_node.value = 0;
+  dummy_node.level = -1;
 
-  // Remove the top layer so we don't have to deal with it
-  inputs_.erase(inputs_.begin());
+  // Fill our mirror list with values of 0
+  std::vector<int> mirror_list(0, n);
 
-  // Our mirror array to select/deselect values
-  std::vector<int> on(inputs_.size(), 1);
+  // Add our dummy node to the queue
+  q.push(dummy_node);
 
-  // Our split
-  bool take = true;
+  for (;!q.empty();) {
+    // Get our value from the queue
+    node u = q.front();
+    q.pop();
 
-  // Now, iterate through our inputs
-  for (int i = 0; i < n - 1; ++i) {
-    for (int j = 0; j <= 1; ++j) {
-      take = j;
-
-      // Go left
-      if (take) {
-
-        // Get our optimistic evaluation
-        int optimistic_evaluation = calculate_optimistic_evaluation(on, i, n);
-
-        // Get our vector of selected values
-        auto relevant_values = select_from_on(on);
-
-        // Calculate our total weight if we take this one
-        int weight = calculate_weight(relevant_values);
-
-        if (weight > k) {
-          // If weight too heigh, exclude this value
-          on[i] = 0;
-        }
-
-        // Discard this branch if optim value too low
-        if (optimistic_evaluation < best_optimistic_evaluation) {
-          // Flip the value in on just in case
-          on[i] = !on[i];
-        }
-
-      } else { // Go right
-        on[i] = 0;
-      }
+    if (u.level == -1) {
+      v.level = 0;
     }
-  }
-}
 
-/// Calculate optimistic evaluation with relaxed value of k
-int Knapsack::calculate_optimistic_evaluation(const std::vector<int>& on, int start, int end) {
-  int sum;
+    // Nowhere to go
+    if (dummy_node.level == n - 1) {
+      continue;
+    }
 
-  for (auto i = 0u; i < on.size(); ++i) {
-    sum += std::get<0>(inputs_[i]);
-  }
+    // Calculate now for the next layer
+    v.level = dummy_node.level + 1;
 
-  return sum;
-}
+    // Compute optimistic evaluation
+    v.weight = dummy_node.weight + std::get<1>(inputs_[v.level]);
+    v.value = dummy_node.value + std::get<0>(inputs_[v.level]);
 
-std::vector<std::pair<int, int>> Knapsack::select_from_on(const std::vector<int>& on) {
-  std::vector<std::pair<int, int>> the_chosen_ones;
-  for (auto i = 0u; i < on.size(); ++i) {
-    if (on[i]) {
-      the_chosen_ones[i] = inputs_[i];
+    // Check weight and value
+    if (v.value > best_optimistic_evaluation && v.weight <= k) {
+      best_optimistic_evaluation = v.value;
+    }
+
+    // Check largest possible value
+    v.bound = calculate_bound(v, n, k);
+
+    // If we potentially can find a better solution,
+    // add it to the queue
+    if (v.bound > best_optimistic_evaluation) {
+      q.push(v);
+      mirror_list[v.level] = 1;
+    }
+
+    // Otherwise, use it without taking it
+    v.weight = dummy_node.weight;
+    v.value = dummy_node.value;
+
+    // Now, bound as if it's zero
+    v.bound = calculate_bound(v, n, k);
+
+    // If it still manages to work, take it
+    if (v.bound > best_optimistic_evaluation) {
+      q.push(v);
+      mirror_list[v.level] = 1;
     }
   }
 
-  return the_chosen_ones;
+  return std::make_pair(mirror_list, best_optimistic_evaluation);
 }
 
-/// Calculate the weight of a vector of pairs
-int Knapsack::calculate_weight(const std::vector<std::pair<int, int>>& weights) {
-  int sum = 0;
-
-  for (const auto& weight : weights) {
-    auto actual_weight = std::get<1>(weight);
-
-    sum += actual_weight;
+int Knapsack::calculate_bound(const node& v, int n, int k) {
+  if (v.weight >= k) {
+    return 0;
   }
 
-  return sum;
+  int total_value = v.value;
+  int total_weight = v.weight;
+
+  int i = v.level + 1;
+
+  while ((i < n) && (total_weight < k)) {
+    // Get value and weight so we know the max
+    total_weight += std::get<0>(inputs_[i]);
+    total_value += std::get<1>(inputs_[i]);
+    ++i;
+  }
+
+  // If weight goes over but we have levels left
+  if (i < n) {
+    total_value += (k - total_weight * (std::get<0>(inputs_[i]) / std::get<1>(inputs_[i])));
+  }
+
+  return total_value;
+}
+
+std::vector<std::string> split_string(std::string& str) {
+  std::string word = "";
+  std::vector<std::string> separated;
+
+  for (const auto& s : str) {
+    if (s == ' ') {
+      separated.push_back(word);
+      word = "";
+    } else {
+      word += s;
+    }
+  }
+
+  return separated;
+}
+
+void read_file(const std::string& filename, int& n, int& k, std::vector<std::pair<int, int>>& values) {
+  int i = 0;
+  std::ifstream file(filename);
+
+  for (std::string line; getline(file, line); ++i) {
+    std::vector<std::string> values = split_string(line);
+  }
+}
+
+int main(int argc, char** argv) {
+  std::shared_ptr<Knapsack> knapsack;
 }
