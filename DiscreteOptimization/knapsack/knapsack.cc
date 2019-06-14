@@ -123,15 +123,37 @@ std::vector<std::string> split_string(std::string& str) {
   return separated;
 }
 
-void read_file(const std::string& filename, int& n, int& k, std::vector<std::pair<int, int>>& values) {
+void read_file(const std::string& filename, int& n, int& k, std::vector<std::pair<int, int>>& vals) {
   int i = 0;
   std::ifstream file(filename);
 
   for (std::string line; getline(file, line); ++i) {
     std::vector<std::string> values = split_string(line);
+    vals.push_back(std::make_pair(std::stoi(values[0]), std::stoi(values[1])));
   }
 }
 
 int main(int argc, char** argv) {
   std::shared_ptr<Knapsack> knapsack;
+
+  std::vector<std::pair<int, int>> values;
+  int n = 0;
+  int k = 0;
+
+  read_file(std::string(argv[1]), n, k, values);
+
+  auto output = knapsack->solve(n, k);
+
+  auto selected = std::get<0>(output);
+  auto max_value = std::get<1>(output);
+
+  for (const auto& v : selected) {
+    std::cout << v << " ";
+  }
+
+  std::cout << std::endl;
+
+  std::cout << max_value;
+
+  return EXIT_SUCCESS;
 }
