@@ -4,48 +4,37 @@ search tree from a sorted array
 """
 
 
-class Node(object):
-    def __init__(self, data=None, left=None, right=None):
+class Node:
+    def __init__(self, data, left=None, right=None):
         self.data = data
         self.left = left
         self.right = right
 
 
-root_node = Node(None, None, None)
+def make_bst(tree, l, r):
+    if l > r:
+        return None
+
+    mid = (l + r) // 2
+    n = Node(tree[mid])
+    n.left = make_bst(tree, l, mid - 1)
+    n.right = make_bst(tree, mid + 1, r)
+    return n
 
 
-def insert(root, val):
-    if root is None:
-        new = Node(val, None, None)
-        root = new
-    else:
-        if root.data < val:
-            if root.right is None:
-                new = Node(val, None, None)
-                root.right = new
-            else:
-                insert(root.right, val)
-        elif root.data > val:
-            if root.left is None:
-                new = Node(val, None, None)
-                root.left = new
-            else:
-                insert(root.left, val)
+def min_bst(arr):
+    return make_bst(arr, 0, len(arr) - 1)
 
 
-def inorder(tree):
-    inorder(tree.left)
-    print(tree.data)
-    inorder(tree.right)
+def inorder(node):
+    if node is not None:
+        inorder(node.left)
+        print(node.data)
+        inorder(node.right)
 
 
-def min_bst(l):
-    for v in l:
-        insert(root_node, v)
+if __name__ == "__main__":
+    arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-    # print the BST
-    inorder(root_node)
-
-
-item_list = [1, 4, 5, 7, 8, 10, 14, 56, 78]
-min_bst(item_list)
+    n = min_bst(arr)
+    inorder(n)
