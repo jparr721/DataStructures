@@ -1,19 +1,23 @@
 def magic_index(l):
-    return magic(l, 0, len(l) - 1)
+    return magic(0, len(l) - 1, l)
 
 
-def magic(l, low, high):
-    mid = (low + high) / 2
+def magic(low, high, l):
+    if high < low:
+        return False, 'fuck'
+    mid = (low + high) // 2
+
     if l[mid] == mid:
-        return mid
+        return True, mid
     elif l[mid] > mid:
-        magic(l, low, mid)
+        return magic(low, mid - 1, l)
     else:
-        magic(l, mid + 1, high)
+        return magic(mid + 1, high, l)
 
 
-def magic_not_distinct(l):
-    l = sorted(l)
-    for i in range(l):
-        if l[i] == 1:
-            return i
+if __name__ == "__main__":
+    l = [-5, 0, 2, 3, 4, 8, 9, 10]
+    ll = [-5, 0, 3, 4, 6, 8, 9, 10]
+
+    print(magic_index(l))
+    print(magic_index(ll))

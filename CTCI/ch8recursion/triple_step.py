@@ -1,39 +1,23 @@
-def triple_step(n):
-    if n == 0 or n == 1:
+from sys import argv
+
+
+def n_steps(n, memo):
+    if n < 0:
+        return 0
+    elif n == 1:
         return 1
-    elif n == 2:
-        return 2
+    elif memo[n] is None:
+        memo[n] = n_steps(n - 1, memo) + n_steps(n - 2, memo) + n_steps(
+            n - 3, memo)
+        return memo[n]
     else:
-        return (triple_step(n - 3) + triple_step(n - 2) +
-                triple_step(n - 1))
+        return memo[n]
 
 
-def triple_step_dp(n):
-    val = [0] * (n + 1)
-    val[0] = 1
-    val[1] = 1
-    val[2] = 2
-
-    for i in range(3, n + 1):
-        val[i] = val[i - 1] + val[i - 2] + val[i - 3]
-
-    return val[n]
+def triple_step(n):
+    ar = [None for i in range(n + 1)]
+    return n_steps(n, ar)
 
 
-def triple_step_o1space(n):
-    a = 1
-    b = 1
-    c = 2
-
-    for i in range(3, n + 1):
-        d = a + b + c
-        a = b
-        b = c
-        c = d
-
-    return d
-
-
-print(triple_step(4))
-print(triple_step_dp(4))
-print(triple_step_o1space(4))
+if __name__ == "__main__":
+    print(triple_step(int(argv[1])))

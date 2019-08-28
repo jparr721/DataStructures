@@ -1,45 +1,29 @@
-def robot_grid(grid, path):
-    for i in range(len(grid) - 1):
-        for j in range(len(grid[i]) - 1):
-            if grid[i][j+1] == 'x':
-                path.append('d')
-                print(path)
-                return robot_grid(grid[i+1][j], path)
-            else:
-                path.append('r')
-                print(path)
-                return robot_grid(grid[i][j+1], path)
-
-
-def robot_grid_rev(maze):
-    if maze is None or len(maze) == 0:
-        return None
-
+def grid_path(r, c, grid):
+    # Starting positions
+    row = 0
+    col = 0
     path = []
-    if get_grid(maze, len(maze) - 1, len(maze[0]) - 1, path):
-        return path
 
-    return None
+    print(f'Using: {r}x{c}')
+    while col < c - 1 or row < r - 1:
+        if col + 1 < c and grid[row][col + 1] != 'x':
+            col += 1
+            path.append('right')
+        if row + 1 < r and grid[row + 1][col] != 'x':
+            row += 1
+            path.append('down')
 
-
-def get_grid(maze, row, column, path):
-    if row < 0 or column < 0 or maze is None:
-        return False
-
-    atOrigin = row == 0 and column == 0
-
-    if (atOrigin or get_grid(maze, row - 1, column, path) or
-            get_grid(maze, row, column - 1, path)):
-        path.append(grid[row][column])
-        return True
-    else:
-        return False
+    return path
 
 
-grid = [['o', 'x', 'o', 'o'],
-        ['o', 'j', 'x', 'o'],
-        ['x', 'j', 'j', 'x'],
-        ['x', 'x', 'j', 'x'],
-        ['x', 'x', 'j', 'j']]
+def p_mat(mat):
+    print('\n'.join(
+        [''.join(['{:4}'.format(item) for item in row]) for row in mat]))
 
-print(robot_grid_rev(grid))
+
+if __name__ == "__main__":
+    grid = [['.', '.', '.', '.'], ['x', '.', '.', '.'], ['.', '.', 'x', '.'],
+            ['.', '.', '.', '.'], ['x', '.', '.', '.']]
+    p_mat(grid)
+
+    print(grid_path(5, 4, grid))

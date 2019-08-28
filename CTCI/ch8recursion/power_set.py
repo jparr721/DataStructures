@@ -1,14 +1,16 @@
-# Given a set of numbers {1, 2, 3, 4}
-# Find all subsets of that set
-# {1}
+def power_set(setty_boi: set):
+    set_size_2 = len(setty_boi)**2
+    s = set()
 
-def power_set(number_set):
-    if number_set is None or len(number_set) == 0:
-        return set()
+    for i in range(set_size_2):
+        sl = []
+        for j in range(len(setty_boi)):
+            if i & (1 << j) > 0:
+                sl.append(setty_boi[j])
+        s.add(tuple(sl))
 
-    subsets = []
-    return get_subsets(number_set, subsets)
+    return s
 
 
-def get_subsets(number_set, subsets):
-
+if __name__ == "__main__":
+    print(power_set([1, 2, 3]))
