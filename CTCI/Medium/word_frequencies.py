@@ -1,28 +1,30 @@
-def word_frequencies(string_of_text):
-    '''Take the words in a big string of
-    text and get the count of each'''
+def word_freq(long_string, word):
+    word = word.lower()
+    ls = [w.lower().strip() for w in long_string.split()]
 
-    counts = {}
+    punctuation = ["!", "?", ".", ",", "'", '"']
+    start = ['"', "'"]
 
-    for s in string_of_text.split(' '):
-        s = s.lower().strip()
+    dictionary = {}
 
-        if s in counts:
-            counts[s] += 1
+    for word in ls:
+        for p in punctuation:
+            if p in word:
+                word = word.replace(p, '')
+        for s in start:
+            if s in word:
+                word = word.replace(s, '')
+
+        if word in dictionary:
+            dictionary[word] += 1
         else:
-            counts[s] = 1
+            dictionary[word] = 1
 
-    return counts
-
-
-def get_word_count(word, counts):
-    print(counts)
-    return counts[word]
+    return dictionary[word]
 
 
-long_as_shit = 'hello my name is jeff. I love to eat oranges and apples and my name is jeff oh yeah'
-
-counts = word_frequencies(long_as_shit)
-print(get_word_count('jeff', counts))
-print(get_word_count('i', counts))
-
+if __name__ == "__main__":
+    print(
+        word_freq(
+            "hey, my name is jeff and I sure do love! to! exclaim! I!? love to cook, did I mention my name is Jeff?",
+            "jeff"))
