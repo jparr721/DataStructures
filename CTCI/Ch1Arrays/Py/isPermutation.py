@@ -4,16 +4,13 @@ of another one
 """
 
 
-def isPermutation(s1, s2):
+def is_permutation(s1, s2):
     s1 = ''.join(sorted(s1))
     s2 = ''.join(sorted(s2))
 
-    if s1 == s2:
-        return True
-    else:
-        return False
+    return s1 == s2
 
 
-print(isPermutation("mom", "mom"))
-print(isPermutation("lyonn", "nylon"))
-print(isPermutation("Jimmy", "smorvelvius nortrixminie"))
+print(is_permutation("mom", "mom"))
+print(is_permutation("lyonn", "nylon"))
+print(is_permutation("Jimmy", "smorvelvius nortrixminie"))
