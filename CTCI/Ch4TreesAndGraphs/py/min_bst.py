@@ -2,6 +2,7 @@
 Create a minimal sized binary
 search tree from a sorted array
 """
+import math
 
 
 class Node:
@@ -33,8 +34,22 @@ def inorder(node):
         inorder(node.right)
 
 
+def min_bst2(ls):
+    return make_bst(ls, 0, len(ls) - 1)
+
+
+def make_bst2(ls, l, r):
+    if l > r:
+        return None
+    mid = ls[math.ceil(len(ls) / 2)]
+
+    root = Node(mid, min_bst2(ls[l:mid]), min_bst2[mid:r])
+
+    return root
+
+
 if __name__ == "__main__":
     arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-    n = min_bst(arr)
+    n = min_bst2(arr)
     inorder(n)
