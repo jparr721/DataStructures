@@ -1,8 +1,3 @@
-"""
-list all nodes at depth i in a hash map
-"""
-
-
 class Node:
     def __init__(self, data, left=None, right=None):
         self.data = data
