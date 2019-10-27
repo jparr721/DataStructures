@@ -2,6 +2,7 @@
 Calculates the determinant via the laplace expansion
 """
 
+
 def det(A):
     dets = []
     coeffs = {}
