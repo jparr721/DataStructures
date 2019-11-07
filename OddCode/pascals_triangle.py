@@ -9,9 +9,9 @@ def generate(num_rows: int) -> List[List[int]]:
     if num_rows == 2:
         return [[1], [1, 1]]
 
-    return self.make_tri([[1], [1, 1]], 2, numRows)
+    return make_tri([[1], [1, 1]], 2, numRows)
 
-def make_tri(self, ls, cur_lv, stop):
+def make_tri(ls, cur_lv, stop):
     end = len(ls) - 1 
     new_level = [1]
 
@@ -26,6 +26,6 @@ def make_tri(self, ls, cur_lv, stop):
     ls.append(new_level)
 
     if len(ls) != stop:
-        return self.make_tri(ls, cur_lv + 1, stop)
+        return make_tri(ls, cur_lv + 1, stop)
 
     return ls
