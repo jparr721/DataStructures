@@ -1,23 +1,19 @@
-from sys import argv
-
-
-def n_steps(n, memo):
-    if n < 0:
-        return 0
-    elif n == 1:
-        return 1
-    elif memo[n] is None:
-        memo[n] = n_steps(n - 1, memo) + n_steps(n - 2, memo) + n_steps(
-            n - 3, memo)
-        return memo[n]
-    else:
-        return memo[n]
-
-
 def triple_step(n):
-    ar = [None for i in range(n + 1)]
-    return n_steps(n, ar)
+    ls = [None] * (n + 1)
+    if n == 0:
+        return 1
+    if n == 1:
+        return 2
+
+    ls[0] = 0
+    ls[1] = 1
+    ls[2] = 1
+
+    for i in range(3, n + 1):
+        ls[i] = ls[i - 1] + ls[i - 2] + ls[i - 3]
+
+    return ls[-1]
 
 
 if __name__ == "__main__":
-    print(triple_step(int(argv[1])))
+    print(triple_step(5))
