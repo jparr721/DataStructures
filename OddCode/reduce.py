@@ -54,7 +54,7 @@ def p(A):
 
 
 if __name__ == "__main__":
-    matrix = [[2, 1, 4], [1, 2, 5]]
+    matrix = [[1, 2, 1], [2, 1, 2]]
     print(f"Starter:\n{p(matrix)}")
     rowreduce(matrix)
     print(p(matrix))
