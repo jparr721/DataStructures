@@ -145,7 +145,8 @@ std::vector<std::vector<std::string>> BraceExpansion(
 
     for (const auto value : values) {
       for (size_t j = 0; j < ret.size(); ++j) {
-        ret[j][0] = ret[j][0] + value;
+        int idx = j % ret.size();
+        ret[idx][0] += value;
       }
     }
   }

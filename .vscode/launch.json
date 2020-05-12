@@ -5,10 +5,25 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "(gdb) Attach",
+      "type": "cppdbg",
+      "request": "attach",
+      "program": "${workspaceFolder}/OddCode/a.out",
+      "processId": "${command:pickProcess}",
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    },
+    {
       "name": "(gdb) Launch",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/OddCode/brace_expansion",
+      "program": "${workspaceFolder}/OddCode/a.out",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
